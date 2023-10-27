@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@200;400;600&display=swap");
+
+:root {
+  --main-bg-color: white;
+  --main-border-color: #ddd;
+  --main-detail-color: #c5e7fc;
+  --main-text-color: black;
+  --main-link-color: #4493d1;
+  --main-body-min-width: 800px;
+  --main-body-max-width: 1220px;
+
+  --main-dropshadow: drop-shadow(1px 1px 1px #222);
+  --main-dropshadow-hover: drop-shadow(5px 5px 5px #222);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  background-image: linear-gradient(
+      var(--main-detail-color) 1.8px,
+      transparent 1.8px
+    ),
+    linear-gradient(to right, var(--main-detail-color) 1.8px, transparent 1.8px);
+  background-size: 18px 18px;
+
+  font-family: "IBM Plex Sans", sans-serif;
+}
+#main {
+  max-width: var(--main-body-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  border: 1px solid var(--main-border-color);
+  background-color: var(--main-bg-color);
+  padding: 1em;
+}
+
+/*--------------------------------------------------------- */
+
+#header {
+  width: 100%;
+  display: inline;
+  display: inline-flex;
+  gap: 1em;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+#header svg {
+  width: clamp(3rem, 8vw, 4rem);
+  display: inline-block;
+  /* flex-shrink: 0; */
+}
+
+#header #mechanical-library-title {
+  font-size: clamp(3rem, 8vw, 4rem);
+  font-weight: 100;
+  line-height: 80%;
+}
+
+#header a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+#content div {
+  margin-bottom: 2em;
+}
