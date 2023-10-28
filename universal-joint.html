@@ -65,9 +65,7 @@
     
 
     <div id="content">
-     
-		
-		
+
 		<div
         class="TitlePanel"
         style="
@@ -80,7 +78,7 @@
           background-image: url('img/site/texture_wood_walnut.jpg');
           justify-content: flex-start;
           align-items: center;
-          gap: 24px;
+          gap: 50px;
           display: inline-flex;
 		  padding-left:0;
         "
@@ -88,7 +86,7 @@
         <img
           class="MUniversalJointTransparentBg2023Oct13035313pm000Customizedview365575186911"
           style="
-            width: 320px; /*croping to left */
+  width: 320px; /*croping to left */
             height: 357px;
 			object-fit: cover;
 			object-position: 100% 0;
@@ -96,7 +94,7 @@
   			filter: var(--main-dropshadow);
 			margin-left:0;
           "
-          src="img/universal_joint/M_universal_joint_transparent_BG_2023-Oct-13_03-53-13PM-000_CustomizedView36557518691.png"
+          src="img/universal_joint/mechanical-library.org_universal_joint_transparent_BG.png"
         />
         <h1 style="		color: white;
 		font-size: 3rem;
@@ -109,65 +107,416 @@
           <b style="display: block; font-size: 5rem;">#23</b>
         Universal Joint</h1>
         </div>
-	</div>
+
+        <section>
+          <b>Jump to</b>
+          <a href="#Definition">Definition</a> | 
+          <a href="#Images">Images</a> | 
+          <a href="#Key_Facts">Key Facts</a> | 
+          <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a> | 
+          <a href="#Videos">Videos</a> | 
+          <a href="#View_in_3D">View_in_3D</a> | 
+          <a href="#3D_Printing">3D_Printing</a> | 
+          <a href="#Lego">Lego</a> | 
+          <a href="#Weird_Fact">Weird Fact</a> | 
+          <a href="#DoubleCardan">Variation: Double Cardan</a> | 
+          <a href="#History">History</a> | 
+          <a href="#Math">Math</a> | 
+          <a href="#Related Mechanisms">Related Mechanisms</a> 
+        </section>
 
 <section>
-      <h2>Definition</h2>
-  <p>    A universal joint (U-joint) is a mechanical joint connecting shafts to transmit rotary motion. It consists of a pair of hinges located close together, oriented at 90° to each other, connected by a cross shaft.
+      <h2 id="Definition">Definition</h2>
+  <p>A universal joint (U-joint) is a mechanical joint connecting shafts to transmit rotary motion. It consists of a pair of hinges located close together, oriented at 90° to each other, connected by a cross shaft.
       </p>
-</section>    
-	<!-- 
-        The spider has 4 spokes that fit into holes of the yokes, enabling it to rotate. 
-In real life use, the ends of the spokes are covered by caps holding cylinder “needle” bearings to reduce friction.
-Universal joints are typically designed to protect the internal parts from dirt.
-A universal joint can be seen under trucks.
-Key Facts
-The rotational velocity of the output shaft is not constant. It will speed up and slow down during a rotation, causing wobble.
-The greater the angle, the bigger the wobble
-You can eliminate the wobble by putting 2 universal joints together “Double Cardan Joint”
-There are other joints that are ‘constant velocity’, but are more complex (see other mechanisms)
-A universal joint can be seen under trucks.
-Engineering Rules of Thumb
-Generally want to keep the angle below 35°, with a max angle of 45°.
-View in 3D
-Apple AR Quick Look (iOS)
-3D print file (STL)
-Related Mechanisms
-#123 Constant Velocity Joint
-#213 Right Angle Joint
-#Magnetic joint
-Weird Fact
-In antiquity, it was noticed that the math between the two joints looks the same as the seasonal variation of day length across the year.  And it is! The earth’s North/South axis is angled 23 degrees from the axis of its orbit around the Sun.
-Variations
-Because of the vibrations, a single Universal Joint is rarely used.  The Double Cardan Joint is very common, either with the 2 Universal joints together, or separated by a intermediate shaft.
-The angle for both joints must be the same to avoid wobble.
-Double Cardan Joint
-Double Cardan Joint
-Double Cardan Joint in Z shape
-Double Cardan Joint in use, driving a worm gear
-Videos
-Shows parts of a universal joint, including needle bearings
-General explanation and demonstration of wobble of output shaft
-Commercial video that shows Universal Joint in use and compares to Constant Velocity joint
-Real life universal joint repair
-Animation showing a double Cardan Joint
-As seen in Legos
-Lego Technic, Universal Joint 4L Item No: 9244c01
-Video of 5 unusual lego universal joints
-3D Model
-3D Print of alternate Universal Joint part
-3D Print of Universal Joint part
-3D Print of Universal Joint part
-3D Print of Double Cardan Joint
-History
-The universal joint idea has been around since antiquity, and been discovered or documented multiple times, for example by Gerolamo Cardano, in the 16th century and Robert Hooke, in the 17th century.
+    </section>
+      
+    <section>
+      <h2  id="Images">Images</h2>
+<p>
+  Here are images of Universal joints.
+</p>
+  <figure>
+  	<img src="img/universal_joint/Universal_joint_transparant.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+  	<figcaption>
+  		The spider has 4 spokes that fit into holes of the yokes, enabling it to rotate. 
+      <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Universal_joint_transparant.gif">Wikipedia</a></small></footer>
+    </figcaption>
+  </figure>
+
+
+  <figure>
+  	<img src="img/universal_joint/u-joint-spider.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+  	<figcaption>
+      In real life use, the ends of the spokes are covered by caps holding cylinder “needle” bearings to reduce friction.
+      <footer><small>Source: mechanical-library.org</small></footer>
+    </figcaption>
+  </figure>
+
+
+  <figure>
+  	<img src="img/universal_joint/Cardan-joint_DIN808_type-E_topview_animated.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+  	<figcaption>
+  		Universal joints are typically designed to protect the internal parts from dirt.
+      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/c/c0/Cardan-joint_DIN808_type-E_topview_animated.gif">Wikipedia</a></small></footer>
+    </figcaption>
+  </figure>
+
+  <figure>
+  	<img src="img/universal_joint/under_car.png" alt="a universal joint under a truck">
+  	<figcaption>
+  		A universal joint can be seen under trucks.
+      <footer><small>Source: mechanical-library.org</small></footer>
+  	</figcaption>
+  </figure>
+
+
+  <figure>
+  	<img src="img/universal_joint/Universal_joint_3slash8_inches.jpg" alt="a universal joint under a truck">
+  	<figcaption>
+  		Universal Joints can also be seen in tools, like a Socket Set
+      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/a/a0/Universal_joint_3slash8_inches.jpg">Wikipedia</a></small></footer>
+  	</figcaption>
+  </figure>
+
+
+
+  <figure>
+  	<img src="img/universal_joint/Saviem_SM7_pic4_-_Cardan.jpg" alt="a universal joint under a truck">
+  	<figcaption>
+  		Universal Joints are commonly used in tough industrial environments.
+      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Saviem_SM7_pic4_-_Cardan.jpg">Wikipedia</a></small></footer>
+  	</figcaption>
+  </figure>
+
+
+</section>
+      
+<section>
+  <h2  id="Key_Facts">Key Facts</h2>
+<ul>
+  <li>
+    The rotational velocity of the output shaft is not constant. It will speed up and slow down during a rotation, causing wobble.
+    The greater the angle, the bigger the wobble
+  </li>
+  <li>You can eliminate the wobble by putting 2 universal joints together “Double Cardan Joint”</li>
+  <li>
+    There are other joints that are 'constant velocity', but are more complex (see other mechanisms)
+    A universal joint can be seen under trucks.
+  </li>
+</ul>
+  </section>
+
+
+
+<section>
+  <h2  id="Engineering Rules of Thumb">Engineering Rules of Thumb</h2>
+  <ul><li>One generally wants to keep the angle below 35°, with a max angle of 45°.</li></p>
+</section>
+
+
+<section>
+  <h2  id="Videos">Videos</h2>
+
+<div>
+  <h3>Shows parts of a universal joint, including needle bearings</h3>
+    <iframe loading="lazy"
+  src="https://www.youtube.com/embed/LCMZz6YhbOQ?autoplay=0&mute=1">
+  </iframe>
+</div>
+
+<div>
+  <h3>General explanation and demonstration of wobble of output shaft</h3>
+    <iframe loading="lazy"
+  src="https://www.youtube.com/embed/Tjn5BAqSb2Q?autoplay=0&mute=1">
+  </iframe>
+</div>
+
+<div>
+  <h3>Commercial video that shows Universal Joint in use and compares to Constant Velocity joint</h3>
+    <iframe loading="lazy"
+  src="https://www.youtube.com/embed/FTiJAdJjsqA?autoplay=0&mute=1">
+  </iframe>
+</div>
+
+<div>
+  <h3>Real life universal joint repair</h3>
+    <iframe loading="lazy"
+  src="https://www.youtube.com/embed/ILTjM7IDTdc?autoplay=0&mute=1">
+  </iframe>
+</div>
+
+<div>
+  <h3>Animation showing a double Cardan Joint</h3>
+    <iframe loading="lazy"
+  src="https://www.youtube.com/embed/cydmR0lX2t8?autoplay=0&mute=1">
+  </iframe>
+</div>
+
+</section>
+
+
+<section>
+  <h2 id="View_in_3D">View in 3D</h2>
+
+
+  <figure>
+    
+<a href="img/universal_joint/UniversalJoint.usdz">
+      <img src="img/universal_joint/mechanical-library.org_universal_joint_transparent_BG.png" alt="a universal joint lego piece">
+  
+</a>    
+<figcaption>
+  <a href="img/universal_joint/UniversalJoint.usdz">
+Apple AR Quick Look (iPhone) </a>
+      <footer><small>Source:mechanical-library.org</a></small></footer>
+    </figcaption>
+  </figure>
+  
+</section>
+
+
+<section>
+  <h2 id="3D_Printing">3D Printing</h2>
+  
+  <figure>
+    <img src="img/universal_joint/large_display_Miniature.jpg" alt="a universal joint lego piece">
+    <figcaption>
+      Lego Technic Compatible Inverse Universal Joint with 2L Axle 
+      <footer><small>Source: <a href="https://www.thingiverse.com/thing:5102079">thingverse.com</a></small></footer>
+    </figcaption>
+  </figure>
+
+
+  <figure>
+    <img src="img/universal_joint/IMG_1246_display_large.JPG" alt="3D Print of Universal Joint part">
+    <figcaption>
+      3D Print of Universal Joint part
+      <footer><small>Source: <a href="https://www.thingiverse.com/thing:264017">thingverse.com</a></small></footer>
+    </figcaption>
+  </figure>
+
+
+  <figure>
+    <img src="img/universal_joint/03-10-2020_17-10-27.jpg" alt="3D Print of Universal Joint part">
+    <figcaption>
+      Universal Joint Demonstrator
+      <footer><small>Source: <a href="https://cults3d.com/en/3d-model/various/universal-joint-demonstrator">cults3d.com</a></small></footer>
+    </figcaption>
+  </figure>
+
+
+
+  
+
+  <figure>
+    <img src="img/universal_joint/turntable1-9.jpg" alt="3D Print of Universal Joint">
+    <figcaption>
+      3D Print of Cardan Joint
+      <footer><small>Source: <a href="https://www.turbosquid.com/3d-models/universal-joint-3d-model/1134139">turbosquid.com</a></small></footer>
+    </figcaption>
+  </figure>
+</section>
+
+
+
+
+<section>
+  <h2  id="Lego">Mechanism in Legos</h2>
+    Lego makes a Universal Joint part
+  
+    <figure>
+      <img src="img/universal_joint/9244c01.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Lego Technic, Universal Joint 4L Item No: 9244c01
+        <footer><small>Source: <a href="https://img.bricklink.com/ItemImage/PN/9/9244c01.png">BrickLink.com</a></small></footer>
+      </figcaption>
+    </figure>
+
+  <div>
+    <h3>Video of 5 unusual lego universal joints</h3>
+      <iframe loading="lazy"
+    src="https://www.youtube.com/embed/_aldR1G6CcI?autoplay=0&mute=1">
+    </iframe>
+  </div>
+</section>
+
+<section>
+  <h2 id="Weird_Fact">Weird Fact</h2>
+  <p>In antiquity, it was noticed that the math between the two joints looks the same as the seasonal variation of day length across the year.  And it is! The earth's North/South axis is angled 23 degrees from the axis of its orbit around the Sun.
+    </p>
+
+    <figure>
+      <img src=" https://upload.wikimedia.org/wikipedia/commons/1/12/EquationofTimeandAnalemma.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Seasonal varation of day length
+        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Equation_of_time#Graphical_representation">wikipedia.org</a></small></footer>
+      </figcaption>
+    </figure>
+  
+  </section>
+
+
+<section>
+  <h2  id="DoubleCardan">Variation: Double Cardan</h2>
+  <p>
+    Because of the vibrations, a single Universal Joint is rarely used.  The Double Cardan Joint is very common, either with the 2 Universal joints together, or separated by a intermediate shaft.
+The angle for both joints must be the same to avoid wobble.    
+    </p>
+
+
+
+    <figure>
+      <img src="img/universal_joint/Cardan-joint_DIN808_type-D_w-arrangement_topview.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Double Cardan Joint
+        <footer><small>Source: <a href="upload.wikimedia.org/wikipedia/commons/8/82/Cardan-joint_DIN808_type-D_w-arrangement_topview.png">wikipedia.org</a></small></footer>
+      </figcaption>
+    </figure>
+
+
+
+    <figure>
+      <img src="img/universal_joint/Cardan-joint_DIN808_type-D_z-arrangement_topview.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Double Cardan Joint in Z shape
+        <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Cardan-joint_DIN808_type-D_z-arrangement_topview.png">wikipedia.org</a> created by <a href="https://commons.wikimedia.org/wiki/User:Silberwolf">Silberwolf</a></small></footer>
+      </figcaption>
+    </figure>
+
+    
+    <figure>
+      <img src="img/universal_joint/Cardan-joint_DIN808_type-D_w-arrangement_3D_animated.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Double Cardan Joint in Z shape
+        <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Cardan-joint_DIN808_type-D_w-arrangement_3D_animated.gif">wikipedia.org</a> created by <a href="https://commons.wikimedia.org/wiki/User:Silberwolf">Silberwolf</a></small></footer>
+      </figcaption>
+    </figure>
+   
+
+
+    <figure>
+      <img src="img/universal_joint/The_universal_joint.jpg" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        Double Cardan Joint in use, driving a worm gear
+        <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/5/58/The_universal_joint.jpg">wikipedia.org</a></small></footer>
+      </figcaption>
+    </figure>
+
+    
+
+    <figure>
+      <img src="img/universal_joint/uj_assy_8mm_display_large.jpg" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <figcaption>
+        3D Print of Double Cardan Joint
+        <footer><small>Source: <a href="https://www.thingiverse.com/thing:42550">thingverse.com</a></small></footer>
+      </figcaption>
+    </figure>
+
+    
+</section>
+
+
+
+<section>
+  <h2 id="History">History</h2>
+  <p>
+    The universal joint idea has been around since antiquity, and been discovered or documented multiple times, for example by Gerolamo Cardano, in the 16th century and Robert Hooke, in the 17th century.
 Design for simple Universal Joint
-Math
+    </p>
+
+
+  <figure>
+  	<img src="img/universal_joint/L-gelenk2.png" alt="a universal joint under a truck">
+  	<figcaption>
+  		Image from Lexikon der gesamten Technik (dictionary of technology) from 1904 by Otto Lueger.
+      <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/Cardan_joints#/media/File:L-gelenk2.png
+        ">Wikipedia</a></small></footer>
+  	</figcaption>
+  </figure>
+
+</section>
+
+<section>
+  <h2 id="Math">Math
+  </h2>
+  <p>
 The rotational speed of the follower shaft will vary based on the angle. This can be calculated.
-        
-        
-        <img
-	src="https://upload.wikimedia.org/wikipedia/commons/3/31/Universal_joint_transparant.gif"
+    </p>
+
+    <figure>
+      <img src="img/universal_joint/UJoint1.png" alt="Output shaft speed relative to input shaft speed, at different angles between shafts">
+      <figcaption>
+        Output shaft speed relative to input shaft speed, at different angles between shafts 
+        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
+          ">Wikipedia</a></small></footer>
+      </figcaption>
+    </figure>
+
+
+
+    <figure>
+      <img src="img/universal_joint/UJoint_3D.png" alt="Diagram showing axis of rotation of both shafts">
+      <figcaption>
+        Diagram showing axis of rotation of both shafts
+        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
+          ">Wikipedia</a></small></footer>
+      </figcaption>
+    </figure>
+
+
+    <figure>
+      <img src="img/universal_joint/UJoint.png" alt="Chart of output shaft realative to input shaft">
+      <figcaption>
+        Diagram showing axis of rotation of both shafts
+        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
+          ">Wikipedia</a></small></footer>
+      </figcaption>
+    </figure>
+
+    
+
+  
+    <figure>
+      <img src="img/universal_joint/73db9fc5ed10a8c72c771594e93133f37118cd62.svg" alt="a universal joint under a truck">
+      <figcaption>
+        Output velocity (ω2) = input velocity (ω2)*  (cosine (β) / (1- sin²(β) * cos()² γ1))
+        ω2 = Output velocity
+        ω2 = Input velocity 
+        β = Angle between planes of rotation, with zero being parallel 
+        γ1 = the angle of rotation for axle 1
+        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
+          ">Wikipedia</a></small></footer>
+      </figcaption>
+    </figure>
+    
+    
+</section>
+
+
+<section>
+  <h2 id="Related Mechanisms">Related Mechanisms</h2>
+  <ul>
+    <li><a href="#">#123 Constant Velocity Joint</a></li>
+    <li><a href="#">#245 Hobson's joint</a></li>
+  </ul>  
+</section>
+
+    <!-- 
+
+      <section>
+  <h2>Title</h2>
+  <ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>  
+</section>
+
+
+<section>
+  <h2>Title</h2>
+  <p></p>
+</section>
   /> -->
 </div content>
   </body>
