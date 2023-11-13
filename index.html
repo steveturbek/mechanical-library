@@ -6,6 +6,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
+
   <link rel="icon" href="img/site/mechanical-library-logo.svg" sizes="any" type="image/svg+xml">
   <link rel="mask-icon" href="img/site/mechanical-library-logo.svg" color="#5bbad5">
   <link rel="apple-touch-icon" sizes="180x180" href="img/site/mechanical-library-logo.png">
@@ -15,87 +18,162 @@
     <div id="main">
 
       <div id="header" >
-              
         <a href="/index.html">
-  <svg
-  width="100px"
-  height="100px"
-  viewBox="0 0 182 182"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-
->
-
-<style>
-
-  svg{ 
-    transform: rotate(0deg);
-    transition: all 2000ms ease;
-  }
-
-  svg:hover{
-    transform: rotate(360deg);
-  }
-<!-- 
-  #gear{ 
-    transform-origin: 91px 91px;
-    transform: rotate(0deg);
-    transition: all 2000ms ease;
-  }
-
-  gear:hover{
-    transform: rotate(360deg);
-  } -->
-</style>
- <path
-    d="M149.652 65.6354C148.664 63.2393 147.485 60.8547 146.072 58.4075C144.702 56.0343 143.184 53.7468 141.529 51.7361L149.818 31.327C150.554 29.5181 149.768 27.3017 148.096 26.2895L119.642 9.88898C117.81 8.77125 115.657 9.32254 114.325 10.7836L100.711 28.1362C95.3759 27.4589 90.0753 27.355 84.6723 28.1014L71.1271 10.806C69.8029 9.19745 67.5918 8.79306 65.8119 9.82065L37.3344 26.2622C35.5545 27.2898 34.8734 29.364 35.6043 31.3151L43.8099 51.6932C40.4621 55.9993 37.8704 60.7586 35.8207 65.6006L13.986 68.7143C12.012 69.063 10.5005 70.7267 10.5525 72.872L10.603 105.671C10.6122 107.742 12.0221 109.499 14.1047 109.681L35.9243 112.707C36.8379 115.146 37.9543 117.764 39.2816 120.063C40.6089 122.362 42.1701 124.724 43.8254 126.735L35.5359 147.144C34.8004 148.953 35.5857 151.169 37.2578 152.181L65.7116 168.582C67.5435 169.699 69.6972 169.148 71.029 167.687L84.643 150.334C89.978 151.012 95.2786 151.116 100.682 150.369L114.227 167.665C115.625 169.23 117.762 169.678 119.542 168.65L148.02 152.208C149.799 151.181 150.555 149.064 149.75 147.156L141.544 126.777C144.892 122.471 147.526 117.786 149.533 112.87L171.368 109.756C173.342 109.408 174.853 107.744 174.801 105.599L174.825 72.7566C174.773 70.6113 173.332 68.9714 171.323 68.7467L149.652 65.6354Z"
-    fill="var(--main-text-color)" class="gear" id="gear"
-  />
-  <path
-    d="M49.4131 58.2671V116.571C54.9665 114.843 64.5588 112.529 70.7293 113.033C77.4608 113.584 84.0071 115.023 90.9237 117.886V59.4715C84.1922 54.699 78.5916 54.0197 71.2903 53.5984C61.7541 53.048 53.9007 55.7997 49.4131 58.2671Z"
-    fill="var(--main-bg-color)" class="page"
-  />
-  <path
-    d="M94.2017 59.4716V117.571C99.7551 115.844 109.347 112.529 115.518 113.034C122.249 113.584 128.796 114.024 135.712 116.886V59.4719C128.981 54.6994 123.38 54.0201 116.079 53.5987C106.543 53.0484 98.6893 57.0041 94.2017 59.4716Z"
-    fill="var(--main-bg-color)" class="page"
-  />
-</svg>
-</a>
-<a href="/index.html">
-<div id="mechanical-library-title">Mechanical Library</div>
-  </a>
+            <svg id ="mechanical-library-logo" viewBox="0 0 182 182" xmlns="http://www.w3.org/2000/svg"> 
+              <path
+                  d="M149.652 65.6354C148.664 63.2393 147.485 60.8547 146.072 58.4075C144.702 56.0343 143.184 53.7468 141.529 51.7361L149.818 31.327C150.554 29.5181 149.768 27.3017 148.096 26.2895L119.642 9.88898C117.81 8.77125 115.657 9.32254 114.325 10.7836L100.711 28.1362C95.3759 27.4589 90.0753 27.355 84.6723 28.1014L71.1271 10.806C69.8029 9.19745 67.5918 8.79306 65.8119 9.82065L37.3344 26.2622C35.5545 27.2898 34.8734 29.364 35.6043 31.3151L43.8099 51.6932C40.4621 55.9993 37.8704 60.7586 35.8207 65.6006L13.986 68.7143C12.012 69.063 10.5005 70.7267 10.5525 72.872L10.603 105.671C10.6122 107.742 12.0221 109.499 14.1047 109.681L35.9243 112.707C36.8379 115.146 37.9543 117.764 39.2816 120.063C40.6089 122.362 42.1701 124.724 43.8254 126.735L35.5359 147.144C34.8004 148.953 35.5857 151.169 37.2578 152.181L65.7116 168.582C67.5435 169.699 69.6972 169.148 71.029 167.687L84.643 150.334C89.978 151.012 95.2786 151.116 100.682 150.369L114.227 167.665C115.625 169.23 117.762 169.678 119.542 168.65L148.02 152.208C149.799 151.181 150.555 149.064 149.75 147.156L141.544 126.777C144.892 122.471 147.526 117.786 149.533 112.87L171.368 109.756C173.342 109.408 174.853 107.744 174.801 105.599L174.825 72.7566C174.773 70.6113 173.332 68.9714 171.323 68.7467L149.652 65.6354Z"
+                  class="gear" id="gear"
+                />
+                <path d="M49.4131 60.2671V118.571C54.9665 116.843 64.5588 114.529 70.7293 115.033C77.4608 115.584 84.0071 117.023 90.9237 119.886V61.4715C84.1922 56.699 78.5916 56.0197 71.2903 55.5984C61.7541 55.048 53.9007 57.7997 49.4131 60.2671Z" class="page"/>
+<path d="M94.2017 61.4716V119.571C99.7551 117.844 109.347 114.529 115.518 115.034C122.249 115.584 128.796 116.024 135.712 118.886V61.4719C128.981 56.6994 123.38 56.0201 116.079 55.5987C106.543 55.0484 98.6893 59.0041 94.2017 61.4716Z" class="page"/>
+              </svg>
+          </a>
+          <a href="/index.html" id="mechanical-library-title">Mechanical Library</a>
   </div>
-
 
 
     <div id="content">
      
-<div id="intro" style="background-color: var(--main-link-color); 
-	  -webkit-filter: var(--main-dropshadow);
-  			filter: var(--main-dropshadow);
+<div id="intro" style="background-color: var(--main-detail-color); 
+	  /* filter: var(--main-dropshadow); */
 			padding:1rem;
-			border-radius: 1rem;">
+      border-radius: var(--main-border-radius);">
 <h1>Connecting Physical Mechanisms & Digital Learning</h1>
-<p>The Mechanical Library shows the mechanisms behind things like a car engine to your phone's vibration. We hope to support STEM education by sparking the "engineering mindset" to analyze how things work.</p>
+<b><p>The Mechanical Library shows the mechanisms that make our world work</p></b>
+<p>It includes a “Wall of Mechanisms” museum exhibit of motorized physical models and this website explaining how they work and how they are used.</p>
 
-<img class="" style="width:100%"
+<img class="" style="width:100%; margin:0;"
 src="img/site/mechanical-library-concept-one-image.png"
 />
-
+<p> We hope to support STEM education by sparking the "engineering mindset" to analyze how things work.</p>
 </div>		
-<h2>The Library</h2>
-<p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
-		<a href="universal-joint.html">
-      <div class="TitlePanel" >
-        <img class="TitlePanelImage"
-          src="img/universal-joint/mechanical-library.org_universal_joint_transparent_BG.png"
-        />
-        <h1>
-          <b>#23</b>
-        Universal Joint</h1>
-        </div>
-</a>
 
-</div content>
-  </body>
-</html>
+<!--------------------------------------------------------------------------------------->
+  
+<div class="TheLibrary">
+  <h2 id="TheLibraryh2">The Library</h2>
+  <p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
+
+
+  <section>
+    <h3><b></b> In Progress</h3>
+      <div class="library-block" style="background: url('img/universal-joint/mechanical-library.org_universal_joint_transparent_BG.png'), #ddd;   background-position: center;
+      background-repeat: no-repeat;
+      background-size: 90%;
+    ">
+        <a href="universal-joint.html"><p><b>#000</b> The Universal Jont</p></a></div>
+  
+   
+  </section>
+
+
+  <h2 id="TheLibraryh2">The Library - Next Up</h2>
+ <section>
+     <h3><b>#100</b> Transmitting Power</h3>
+     <div class="library-block" > <p><b>#000</b> What is power?</p></div>
+     <!-- <h2>Plants</h2>
+     <h2>Animal “Horsepower”</h2>
+    <h2>Water</h2>
+     <h2>Wind</h2>
+     <h2>Pressure</h2>
+     <h2>Electrical</h2>
+     <h2>Radiation</h2>
+     <h2>Steam engines</h2>
+     <h2>Combustion engines</h2>
+     <h2>Electric motors</h2> -->
+    <div class="library-block" > <p><b>#000</b>  Fluids (hydraulics) & Air pressure (pneumatics)</p></div>
+    <div class="library-block" > <p><b>#000</b>  Ropes & Wires </p></div>
+    <div class="library-block" > <p><b>#000</b>  Belts & Chains</p></div>
+    <div class="library-block" > <p><b>#000</b>  Gears and Screws</p></div>
+    <div class="library-block" > <p><b>#000</b> Bar Linkages</p></div>
+    <div class="library-block" > <p><b>#000</b> Compliant mechanisms</p></div>
+ 
+ </section>
+ 
+ <section>
+   <h3><b>#200</b> Changing Direction</h3>
+    <div class="library-block" > <p><b>#000</b>  Screws and Worms</p></div>
+    <div class="library-block" > <p><b>#000</b>  Miter and Bevel Gear </p></div>
+    <div class="library-block" > <p><b>#000</b> Gearless transmssion “Elbow” & Spring elbow</p></div>
+ </section>
+ 
+ <section>
+   <h3><b>#300</b>  Rotary into Linear motion</h3>
+    <div class="library-block" > <p><b>#000</b> Rack & Pinion</p></div>
+    <div class="library-block" > <p><b>#000</b> Slotted Yoke (Scotch Yoke) & Quick Return </p></div>
+    <div class="library-block" > <p><b>#000</b> Ratchet Pawls & Stops</p></div>
+    <div class="library-block" > <p><b>#000</b> Slider Crank Mechanism</p></div>
+    <div class="library-block" > <p><b>#000</b> Crankshaft</p></div>
+   <div class="library-block" > <p><b>#000</b> Cam & Follower</p></div>
+   <div class="library-block" > <p><b>#000</b> Cams & Eccentric Drive</p></div>
+    <div class="library-block" > <p><b>#000</b> Gears that are missing teeth</p></div>
+    <div class="library-block" > <p><b>#000</b> Geneva Movement</p></div>
+ </section>
+ 
+ <section>
+   <h3><b>#300</b>  Linear into Rotary motion</h3>
+    <div class="library-block" > <p><b>#000</b> Steam & Combustion Piston</p></div>
+  </section>
+ 
+  <section><h3><b>#000</b> Changing gears</p></h3>
+    <div class="library-block" > <p><b>#000</b> Friction & Mechanical clutch</p></div>
+    <div class="library-block" > <p><b>#000</b> Differential Gear</p></div>
+ </section>
+   
+ 
+ 
+ <section>
+     <h3><b>#900</b> Different Approaches to Common Problems</h3>
+       <div class="library-block" > <p><b>#000</b> Moving around</p></div>
+    <div class="library-block" > <p><b>#000</b> Reaching an arm</p></div>
+    <div class="library-block" > <p><b>#000</b> Grabbing an item</p></div>
+ </section>
+ </div theLibrary>
+ 
+
+
+    <section><h2 id="Exhibit">The Exhibit</h2>
+      <p>
+        The exhibit is a set of cabinets of moving mechanical demonstrations, grouped into themes, aligned with online course material.
+          The cabinets will be designed to move to visit schools and museums.
+              </p>
+<p>
+  <b>The Exhibit is currently under construction, with an expected date at end of 2024</b>
+</p>
+
+
+        </section>
+
+    <section><h2 id="Definition">Mechanical Library Project Goals</h2>
+      
+    </ul>
+<li>Inspire the 'engineering mindset' in middle to high school students, especially those not excited by math and engineering.</li>
+<li>Make something interesting for kids and parents to introduce Mechanical Engineering using practical demonstrations. </li>
+<li>Communicate the opportunities for a career in the well-paid physical technical fields.</li>
+<li>Support teachers who cover these subjects.</li>
+</ul>
+        </section>
+    
+
+
+<section><h2 id="About">About</h2>
+<p>
+The Mechanical Library is being built by <a href="https://www.turbek.com">Steve Turbek</a>.
+It is inspired by great engineering teachers and historical books like "507 Mechanical Movements" by Henry T. Brown and the Clark Collection of Mechanical Movement - Boston Museum of Science. 
+</p>
+<p>For more information, see <a href="research.html">research and sources page</a> </p> 
+
+</section>
+
+
+
+<section><h2 id="Sponsorship">Sponsorship / Partnership</h2>
+  <p>
+    Mechanical Library is a non-commercial labor of love.  Generous sponsorship by <a href="https://www.nycfirst.org">NYCFirst</a>, who provides meaningful and joyful STEM and robotics programming to NYC public school students.
+      </p>
+  <p>If you would like to become a partner or sponsor, please contact steve (at) turbek.com</p>
+</section>
+
+
+
+</div content></body></html>

@@ -4,11 +4,12 @@
   --main-bg-color: white;
   --main-border-color: #ddd;
   --main-border: 1px solid var(--main-border-color);
-  --main-detail-color: #c5e7fc;
+  --main-detail-color: #f6f4f4;
   --main-text-color: black;
   --main-link-color: #4493d1;
   --main-dropshadow-color: #222;
 
+  --main-border-radius: 1;
   --main-dropshadow: drop-shadow(1px 1px 1px var(--main-dropshadow-color));
   --main-dropshadow-hover: drop-shadow(
     5px 5px 5px var(--main-dropshadow-color)
@@ -43,14 +44,21 @@ body {
 
   font-family: "IBM Plex Sans", sans-serif;
 }
+p {
+  line-height: 120%;
+}
+li {
+  margin-bottom: 10px;
+}
+
 #main {
   max-width: var(--main-div-max-width);
   margin-left: auto;
   margin-right: auto;
-  border-radius: 1rem;
+  border-radius: var(--main-border-radius);
   border: var(--main-border);
   background-color: var(--main-bg-color);
-  padding: 1em;
+  padding: 2em;
 }
 
 a {
@@ -69,23 +77,43 @@ a:hover {
   /* display: inline; */
   display: inline-flex;
   gap: 1em;
-  justify-content: left;
-  align-items: center;
+  /* justify-content: left; */
   text-align: left;
+  margin-bottom: 20px;
 }
 
-#header svg {
-  width: 70px;
-  display: inline-block;
-  /* flex-shrink: 0; */
+#mechanical-library-logo {
+  width: 40px;
+  height: 40px;
+
+  padding-top: 4px;
+  vertical-align: bottom;
+}
+
+#mechanical-library-logo .gear {
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 2000ms ease;
+}
+
+#mechanical-library-logo .gear:hover {
+  transform: rotate(360deg);
+}
+
+#mechanical-library-logo .page {
+  fill: var(--main-bg-color);
+}
+
+#mechanical-library-logo .gear {
+  fill: var(--main-text-color);
 }
 
 #header #mechanical-library-title {
-  font-size: clamp(40px, 7vw, 72px);
+  font-size: 36px;
   padding: 0;
   margin: 0;
-  font-weight: 800;
-  vertical-align: middle;
+  font-weight: 200;
+  display: block;
 }
 
 #header a {
@@ -104,7 +132,7 @@ a:hover {
   height: 250px;
   -webkit-filter: var(--main-dropshadow);
   filter: var(--main-dropshadow);
-  border-radius: 20px;
+  border-radius: var(--main-border-radius);
   overflow: hidden;
   background-image: url("img/site/texture_wood_walnut.jpg");
   justify-content: flex-start;
@@ -142,18 +170,23 @@ a:hover {
 }
 /*--------------------------------------------------------- */
 
+#content h1 {
+  font-size: 200%;
+  font-weight: 400;
+}
+
 #content h2 {
   font-size: 200%;
   font-weight: 200;
-  margin-top: 4rem;
-  border-top: var(--main-border);
-  padding-top: 1rem;
+  margin-top: 0;
+  border-bottom: var(--main-border);
+  padding-top: 0;
 }
 
 #content h3 {
   /* font-size: 150%; */
   font-weight: 400;
-  margin-top: 4rem;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -167,15 +200,16 @@ a:hover {
   /* max-width: 800px; */
 
   text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem;
+  background: var(--main-detail-color);
+  margin-bottom: 2rem;
 }
 
 #content section figure {
   /* display: block; */
   /* position: relative; */
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: var(--main-border-radius);
   border: var(--main-border);
   /* padding: 20px; */
   margin-left: 0;
@@ -232,6 +266,7 @@ figcaption {
     /* margin: 0; */
     background: var(--main-bg-color);
   }
+
   #main {
     width: 100%;
     margin: 0;
@@ -246,9 +281,9 @@ figcaption {
   }
 
   #header #mechanical-library-title {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 80%;
-    padding-top: 8px;
+    /* padding-top: 8px; */
   }
 
   .TitlePanel h1 {
@@ -336,3 +371,52 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*--------------------------------------------------------- */
+/*----------------home page Library blocks-------------- */
+/*--------------------------------------------------------- */
+
+#content .TheLibrary {
+  margin-top: 100px;
+}
+
+#content #TheLibraryh2 {
+  font-weight: 900;
+  font-size: 200%;
+}
+
+.TheLibrary section h3 {
+  padding-top: 20px;
+  font-weight: 100;
+  padding-bottom: 20px;
+  font-size: 150%;
+}
+
+.library-block {
+  width: 250px;
+  height: 250px;
+  display: inline-flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 20%;
+  padding: 1 rem;
+  vertical-align: middle;
+  background-color: #fff;
+  margin: 1 rem;
+}
+
+.library-block:hover {
+  filter: var(--main-dropshadow-hover);
+}
+
+.library-block p {
+  margin-left: 10px;
+  font-size: 200%;
+  font-weight: 700;
+}
+.library-block b {
+  display: block;
+  font-weight: 200;
+}
+/*--------------------------------------------------------- */
