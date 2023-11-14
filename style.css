@@ -5,6 +5,7 @@
   --main-border-color: #ddd;
   --main-border: 1px solid var(--main-border-color);
   --main-detail-color: #f6f4f4;
+  --main-highlight-color: #c5e7fc;
   --main-text-color: black;
   --main-link-color: #4493d1;
   --main-dropshadow-color: #222;
@@ -16,25 +17,28 @@
   );
 
   --main-background-image: linear-gradient(
-      var(--main-detail-color) 1px,
+      var(--main-highlight-color) 1px,
       transparent 1px
     ),
-    linear-gradient(to right, var(--main-detail-color) 1px, transparent 1px);
+    linear-gradient(to right, var(--main-highlight-color) 1px, transparent 1px);
 
-  background-size: 18px 18px;
   /* --main-div-min-width: 500px; */
   --main-div-max-width: 800px;
 }
 
+/*---------------- DARK THEME ----------------------- */
 [data-theme="dark"] {
   --main-bg-color: #000;
   --main-border-color: #444;
   --main-border: 1px solid var(--main-border-color);
   --main-detail-color: #333;
+  --main-highlight-color: #333;
   --main-text-color: #eee;
   --main-link-color: #4493d1;
   --main-dropshadow-color: #eee;
 }
+
+/*---------------- MAIN BODY HTML CSS ----------------------- */
 
 body {
   background-color: var(--main-bg-color);
