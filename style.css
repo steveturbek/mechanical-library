@@ -307,6 +307,7 @@ figcaption {
     width: 100%;
     /* border: 1px solid red; */
     padding: 0;
+    padding-bottom: 1rem;
   }
 
   #content section figure {
