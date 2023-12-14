@@ -171,44 +171,47 @@ a:hover {
 
 .TitlePanel {
   width: 100%;
-  height: 250px;
-  -webkit-filter: var(--main-dropshadow);
-  filter: var(--main-dropshadow);
-  border-radius: var(--main-border-radius);
+  /* height: 250px; */
+  /* -webkit-filter: var(--main-dropshadow); */
+  /* filter: var(--main-dropshadow); */
   overflow: hidden;
-  background-image: url("img/site/texture_wood_walnut.jpg");
+  /* background-color: var(--main-text-color); */
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
   display: inline-flex;
-  padding-left: 0;
+  /* padding: 20px; */
+  border: 1px solid var(--main-text-color);
 }
 
-.TitlePanelImage {
-  width: 320px; /*croping to left */
+/* .TitlePanelImage {
+  width: 320px; cropping to left 
   height: 357px;
   object-fit: cover;
   object-position: 100% 0;
   -webkit-filter: var(--main-dropshadow);
   filter: var(--main-dropshadow);
   margin-left: 0;
-}
+} */
 
+.TitlePanel video {
+  border-right: 1px solid var(--main-text-color);
+}
 .TitlePanel h1 {
   /* position: absolute;
   right: 10%; */
-  color: white;
-  font-size: 3rem;
-  font-family: IBM Plex Mono;
+  /* color: var(--main-bg-color); */
+  font-size: 7rem;
+  /* font-family: IBM Plex Mono; */
   font-weight: 200;
   word-wrap: break-word;
-  -webkit-filter: var(--main-dropshadow);
-  filter: var(--main-dropshadow);
+  /* -webkit-filter: var(--main-dropshadow);
+  filter: var(--main-dropshadow); */
 }
 
 .TitlePanel h1 b {
   display: block;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 /*--------------------------------------------------------- */
 
@@ -300,7 +303,7 @@ figcaption {
     /* display:block */
     position: absolute;
     left: 5%;
-    filter: var(--main-dropshadow-hover);
+    /* filter: var(--main-dropshadow-hover); */
   }
 
   #content section {
@@ -405,38 +408,43 @@ input:checked + .slider:before {
 
 .library-block {
   width: 250px;
-  height: 250px;
+  height: 300px;
   display: inline-flex;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 10%;
-  background-position: 20%;
+
   vertical-align: middle;
-  background-color: #fff;
-  margin: 1 rem;
-  padding: 1 rem;
+  background-color: var(--main-text-color);
 }
 
 .library-block:hover {
   filter: var(--main-dropshadow-hover);
 }
 
-.library-block p {
-  margin-left: 10px;
-  font-size: 200%;
-  font-weight: 700;
-  margin-top: 30%;
-}
-.library-block b {
-  display: block;
-  font-weight: 200;
+.library-block a {
+  color: var(--main-bg-color);
 }
 
+.library-block .caption {
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.library-block .caption b {
+  font-weight: 900;
+  font-size: 24px;
+}
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {
   .library-block {
     width: 100%;
+    height: 110vw;
+  }
+
+  .library-block-video {
+    width: 100%;
+    height: 100vw;
+    aspect-ratio: 1/1;
+    margin: 0;
   }
 
   .library-block p {
