@@ -174,9 +174,10 @@ a:hover {
   /* height: 250px; */
   /* -webkit-filter: var(--main-dropshadow); */
   /* filter: var(--main-dropshadow); */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color: var(--main-text-color); */
-  justify-content: flex-start;
+  /* justify-content: flex-start;
+  */
   align-items: center;
   gap: 50px;
   display: inline-flex;
@@ -184,24 +185,14 @@ a:hover {
   border: 1px solid var(--main-text-color);
 }
 
-/* .TitlePanelImage {
-  width: 320px; cropping to left 
-  height: 357px;
-  object-fit: cover;
-  object-position: 100% 0;
-  -webkit-filter: var(--main-dropshadow);
-  filter: var(--main-dropshadow);
-  margin-left: 0;
-} */
-
-.TitlePanel video {
+.TitlePanel-video {
   border-right: 1px solid var(--main-text-color);
 }
-.TitlePanel h1 {
+.TitlePanel .caption {
   /* position: absolute;
   right: 10%; */
   /* color: var(--main-bg-color); */
-  font-size: 7rem;
+  font-size: 3em;
   /* font-family: IBM Plex Mono; */
   font-weight: 200;
   word-wrap: break-word;
@@ -209,9 +200,42 @@ a:hover {
   filter: var(--main-dropshadow); */
 }
 
-.TitlePanel h1 b {
+.TitlePanel .caption b {
   display: block;
-  font-size: 6rem;
+  font-size: 4rem;
+}
+
+/*----------------------RESPONSIVE--------------------- */
+
+@media screen and (max-width: 510px) {
+  .TitlePanel {
+    width: 100%;
+    /* height: 110vw; */
+    display: block;
+    border: 0;
+  }
+
+  .TitlePanel .caption {
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    padding: 10px;
+  }
+
+  .TitlePanel .caption b {
+    font-weight: 900;
+    font-size: 24px;
+    display: inline;
+  }
+
+  .TitlePanel-video {
+    width: 100%;
+    height: 100vw;
+    /* aspect-ratio: 1/1; */
+    margin: 0;
+    border-right: 0px;
+  }
 }
 /*--------------------------------------------------------- */
 
@@ -299,13 +323,6 @@ figcaption {
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {
-  .TitlePanel h1 {
-    /* display:block */
-    position: absolute;
-    left: 5%;
-    /* filter: var(--main-dropshadow-hover); */
-  }
-
   #content section {
     width: 100%;
     /* border: 1px solid red; */
@@ -324,67 +341,6 @@ figcaption {
     display: inline-block;
   }
 }
-
-/*--------------------------------------------------------- */
-/*----------------------THEME SWITCHER------------------------- */
-/*--------------------------------------------------------- */
-/* theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
-}
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-} */
 
 /*--------------------------------------------------------- */
 /*----------------home page Library blocks-------------- */
@@ -406,7 +362,7 @@ input:checked + .slider:before {
   font-size: 150%;
 }
 
-.library-block {
+.library-item-block {
   width: 250px;
   height: 300px;
   display: inline-flex;
@@ -415,29 +371,41 @@ input:checked + .slider:before {
   background-color: var(--main-text-color);
 }
 
-.library-block:hover {
+.library-item-block:hover {
   filter: var(--main-dropshadow-hover);
 }
 
-.library-block a {
+.library-item-block a {
   color: var(--main-bg-color);
 }
 
-.library-block .caption {
+.library-item-block .caption {
   padding-left: 10px;
   font-size: 18px;
 }
 
-.library-block .caption b {
+.library-item-block .caption b {
   font-weight: 900;
   font-size: 24px;
 }
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {
-  .library-block {
+  .library-item-block {
     width: 100%;
     height: 110vw;
+  }
+
+  .library-item-block .caption {
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+  }
+
+  .library-item-block .caption b {
+    font-weight: 900;
+    font-size: 24px;
   }
 
   .library-block-video {
@@ -445,12 +413,6 @@ input:checked + .slider:before {
     height: 100vw;
     aspect-ratio: 1/1;
     margin: 0;
-  }
-
-  .library-block p {
-    font-size: 300%;
-    font-weight: 700;
-    margin-top: 10%;
   }
 }
 /*--------------------------------------------------------- */
