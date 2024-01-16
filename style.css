@@ -392,8 +392,10 @@ figcaption {
 
 @media screen and (max-width: 510px) {
   .library-item-block {
-    width: 100%;
+    width: 99%;
     height: 100vw;
+    display: block;
+    border: 0;
   }
 
   .library-item-block .caption {
