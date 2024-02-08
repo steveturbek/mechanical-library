@@ -39,7 +39,7 @@
 			padding:1rem;
       border-radius: var(--main-border-radius);">
 <h1>Connecting Physical Mechanisms & Digital Learning</h1>
-<b><p>The Mechanical Library shows the mechanisms that make our world work</p></b>
+<b><p>The Mechanical Library shows the mechanisms that make our world work.</p></b>
 <p>It includes a “Wall of Mechanisms” museum exhibit of motorized physical models and this website explaining how they work and how they are used.
   The cabinets will be designed to move to visit schools and museums.
     We hope to support STEM education by sparking the "engineering mindset" to analyze how things work.</p>
@@ -54,16 +54,85 @@ src="img/site/mechanical-library-concept-one-image.png"
 />
 </div>		
 
+<!-- ------------------------------------------------------------- -->
+<div class="TheLibrary-inProgress">
+  <style>
 
-  
-<div class="TheLibrary">
-  <h2 id="TheLibraryh2">The Library</h2>
-  <p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
+    /*----------------home page Library blocks-------------- */
+    /*--------------------------------------------------------- */
+    
+
+    .TheLibrary-inProgress section h3 {
+      padding-top: 20px;
+      font-weight: 100;
+      padding-bottom: 20px;
+      font-size: 150%;
+    }
+    
+    .library-item-block {
+      width: 250px;
+      height: 300px;
+      display: inline-flex;
+    
+      vertical-align: middle;
+      background-color: var(--main-text-color);
+    }
+    
+    .library-item-block:hover {
+      filter: var(--main-dropshadow-hover);
+    }
+    
+    .library-item-block a {
+      color: var(--main-bg-color);
+    }
+    
+    .library-item-block .caption {
+      padding-left: 10px;
+      font-size: 18px;
+    }
+    
+    .library-item-block .caption b {
+      font-weight: 900;
+      font-size: 24px;
+    }
+    /*----------------------RESPONSIVE--------------------- */
+    
+    @media screen and (max-width: 510px) {
+      .library-item-block {
+        width: 99%;
+        height: 100vw;
+        display: block;
+        border: 0;
+      }
+    
+      .library-item-block .caption {
+        padding: 10px;
+        font-size: 18px;
+        background-color: var(--main-text-color);
+        color: var(--main-bg-color);
+      }
+    
+      .library-item-block .caption b {
+        font-weight: 900;
+        font-size: 24px;
+      }
+    
+      .library-block-video {
+        width: 99vw;
+        height: 100vw;
+        aspect-ratio: 1/1;
+        margin: 0;
+      }
+    }
+    </style>
+
 
 
   <section>
-    <h3><b></b> In Progress</h3>
 
+    <h2 id="TheLibraryh2">The Library - In Progress</h2>
+    <p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
+  
     <div class="library-item-block">
       <a href="universal-joint.html">
     <video autoplay muted loop playsinline id="myVideo"  class="library-block-video">
@@ -76,17 +145,74 @@ src="img/site/mechanical-library-concept-one-image.png"
                 </a>
       </div>
   
+      
    
   </section>
+</div>
+
 <br clear="all">
 
-  <h2 id="TheLibraryh2">The Library - Future Elements</h2>
 
+
+
+<!-- ------------------------------------------------------------- -->
+<div>
+  <style>
+  #TheLibraryFuture #cabinet-holder{
+vertical-align: top;
+display: flex;
+  }
+
+#TheLibraryFuture .cabinet {
+padding: 8px;
+  width:30%;
+margin-right: auto;
+background-color: var(--main-bg-color);
+display: block;
+}
+
+#TheLibraryFuture .cabinet:last-of-type {
+margin-right: 0;
+}
+
+
+#TheLibraryFuture .cabinet h3{
+font-weight: 800;
+display: block;
+}
+
+
+#TheLibraryFuture .cabinet b {
+  margin-left: -30px;
+}
+
+/*--------- RESPONSIVE ------------*/
+@media screen and (max-width: 510px) {
+  #TheLibraryFuture #cabinet-holder {
+    display: block;
+  }
+
+  #TheLibraryFuture .cabinet  {
+        width: 99%;
+        margin-right: 0;
+      }
+    }
+    
+</style>
+
+
+<section id="TheLibraryFuture">
+
+  <h2 style="width:100%; display:inline-block">The Library - Future Elements</h2>
+  <br clear="all">
+
+  <!--
   <section>
      <h3><b>#100</b> Transmitting Power</h3>
-     <div class="library-block-future" ><p>  What is power?</p></div>
-     <!-- <h2>Plants</h2>
-     <h2>Animal “Horsepower”</h2>
+ <p>What is power?</p>
+    
+    <h2>Plants</h2>
+    <h2>Animal “Horsepower”</h2>
     <h2>Water</h2>
      <h2>Wind</h2>
      <h2>Pressure</h2>
@@ -94,67 +220,117 @@ src="img/site/mechanical-library-concept-one-image.png"
      <h2>Radiation</h2>
      <h2>Steam engines</h2>
      <h2>Combustion engines</h2>
-     <h2>Electric motors</h2> -->
-    <div class="library-block-future" ><p>  Fluids (hydraulics) & Air pressure (pneumatics)</p></div>
-    <div class="library-block-future" ><p>  Ropes & Wires </p></div>
-    <div class="library-block-future" ><p>  Belts & Chains</p></div>
-    <div class="library-block-future" ><p>  Gears and Screws</p></div>
-    <div class="library-block-future" ><p>  Bar Linkages</p></div>
-    <div class="library-block-future" ><p>  Compliant mechanisms</p></div>
- 
- </section>
- 
- <section>
-   <h3><b>#200</b> Changing Direction</h3>
-    <div class="library-block-future" ><p>  Screws and Worms</p></div>
-    <div class="library-block-future" ><p>  Miter and Bevel Gear </p></div>
-    <div class="library-block-future" ><p>  Gearless transmission “Elbow” & Spring elbow</p></div>
- </section>
- 
- <section>
-   <h3><b>#300</b>  Rotary into Linear motion</h3>
-    <div class="library-block-future" ><p>  Rack & Pinion</p></div>
-    <div class="library-block-future" ><p>  Slotted Yoke (Scotch Yoke) & Quick Return </p></div>
-    <div class="library-block-future" ><p>  Ratchet Pawls & Stops</p></div>
-    <div class="library-block-future" ><p>  Slider Crank Mechanism</p></div>
-    <div class="library-block-future" ><p>  Crankshaft</p></div>
-   <div class="library-block-future" ><p>  Cam & Follower</p></div>
-   <div class="library-block-future" ><p>  Cams & Eccentric Drive</p></div>
-    <div class="library-block-future" ><p>  Gears that are missing teeth</p></div>
-    <div class="library-block-future" ><p>  Geneva Movement</p></div>
- </section>
- 
- <section>
-   <h3><b>#300</b>  Linear into Rotary motion</h3>
-    <div class="library-block-future" ><p>  Steam & Combustion Piston</p></div>
+     <h2>Electric motors</h2>
+
   </section>
- 
-  <section><h3><b>#000</b> Changing gears</p></h3>
-    <div class="library-block-future" ><p>  Friction & Mechanical clutch</p></div>
-    <div class="library-block-future" ><p>  Differential Gear</p></div>
- </section>
-   
- 
- 
- <section>
-     <h3><b>#900</b> Different Approaches to Common Problems</h3>
-       <div class="library-block-future" ><p>  Moving around</p></div>
-    <div class="library-block-future" ><p>  Reaching an arm</p></div>
-    <div class="library-block-future" ><p>  Grabbing an item</p></div>
- </section>
- </div theLibrary>
- 
+-->
+
+<div id="cabinet-holder">
+  
+  <div class="cabinet">
+  <h3>Basic Components</h3>
+  <ol>
+    <li>1,000,000:1 Gear reduction</li>
+    <li>Gears and Screws, Miter and Bevel Gear</li>
+    <li>Screws and Worms</li>
+    <li>Gears that are missing teeth</li>
+    <li>Belts & Chains</li>
+    <li>Bar Linkages</li>
+    <li>Gearless transmission “Elbow” & Spring elbow</li>
+    <li>Rack & Pinion</li>
+    <li>Ropes, Wires, & Pulleys</li>
+    <li>Ratchet Pawls & Stops</li>
+    <li>Magnetic gears</li>
+    <li>Fluids (hydraulics) & Air pressure (pneumatics)</li>
+  </ol>
+  </div>
+  
+  <div class="cabinet">
+  <h3>Complex Mechanisms</h3>
+  <ol>
+    <li>Slotted Yoke & Quick Return </li>
+    <li>Slider Crank Mechanism</li>
+    <li>Crankshaft</li>
+    <li>Cam & Follower, external and in groove</li>
+    <li>Cams & Eccentric Drive 89, heart shape and wave wheel</li>
+    <li>Geneva Movement</li>
+    <li>Steam & Combustion Piston</li>
+    <li>Friction & Mechanical clutch</li>
+    <li>Differential Gear</li>
+    <li>Universal joint</li>
+    <li>Linear actuators</li>
+    <li>Cycloidal drive</li>
+  </ol>
+  
+  <!-- 
+  One way bearing - roller clutch
+  Constant velocity joint
+  #27 Multiple Gear Drive 
+  502. An “epicyclic train.
+   -->
+  </div>
+  
+  
+  <div class="cabinet">
+  <h3>Different Approaches to Common Problems</h3>
+  
+  <ol>
+    <b>Moving around</b>
+    <li>Wheels</li>
+    <li>Treads</li>
+    <li>Legs / Feet</li>
+    <li>Drone propellor</li>
+    <b>Reaching an arm</b>
+    <li>Motors & gears</li>
+    <li>Bar linkages </li>
+    <li>Pistons (& Wire pulleys)</li>
+    <li>XYZ belt drive</li>
+    <b>Grabbing an item</b>
+    <li>Motor / Gears</li>
+    <li>Pulley / wire</li>
+    <li>Compliant mechanism</li>
+    <li>Soft robotics</li>
+    
+  </ol>
+  </div>
+  <!--
+  
+  (Bonus) 12 ways to power a bicycle
+  Common Chain 
+  Timing Belt
+  Laufmaschine( "running machine”)
+  McCall/ Macmillan “treadle bicycle”
+  Directly driven bicycle (see penny-farthing and unicycle) https://en.wikipedia.org/wiki/Penny-farthing
+  String drive https://www.youtube.com/watch?v=doKhd8kE0Ow&t=17s
+  Hydraulic https://en.wikipedia.org/wiki/Hydraulic_bicycle
+  Carroll Gear Drive Bicycle
+  Hildick's chainless bicycle gear 
+  Bevel gear drive
+  2 way chain  https://www.youtube.com/watch?v=EroCd_gTBj0
+  Electric drive https://www.youtube.com/watch?v=r-Zyp6jX0HM
+  
+  https://en.wikipedia.org/wiki/Bicycle_drivetrain_systems
+  https://www.nms.ac.uk/bicycles
+  
+  -->
+</div>
+
+</section>
+</div>
 
 
 
-    <section><h2 id="Definition">Mechanical Library Project Goals</h2>
+
+<!-- ------------------------------------------------------------- -->
+
+<section><h2 id="Definition">Mechanical Library Project Goals</h2>
       
-    </ul>
+    </ol>
 <li>Inspire the 'engineering mindset' in middle to high school students, especially those not excited by math and engineering.</li>
 <li>Make something interesting for kids and parents to introduce Mechanical Engineering using practical demonstrations. </li>
 <li>Communicate the opportunities for a career in the well-paid physical technical fields.</li>
 <li>Support teachers who cover these subjects.</li>
-</ul>
+</ol>
         </section>
     
 
@@ -162,7 +338,7 @@ src="img/site/mechanical-library-concept-one-image.png"
 <section><h2 id="About">About</h2>
 <p>
 The Mechanical Library is being built by <a href="https://www.turbek.com">Steve Turbek</a>.
-It is inspired by great engineering teachers and historical books like "507 Mechanical Movements" by Henry T. Brown and the Clark Collection of Mechanical Movement - Boston Museum of Science. 
+It is inspired by great engineering teachers and historical books like "507 Mechanical Movements" by Henry T. Brown and the Clark Collection of Mechanical Movement at the Boston Museum of Science. 
 </p>
 <p>For more information, see <a href="research.html">research and sources page</a> </p> 
 
@@ -172,7 +348,7 @@ It is inspired by great engineering teachers and historical books like "507 Mech
 
 <section><h2 id="Sponsorship">Sponsorship / Partnership</h2>
   <p>
-    Mechanical Library is a non-commercial labor of love.  Generous sponsorship by <a href="https://www.nycfirst.org">NYCFirst</a>, who provides meaningful and joyful STEM and robotics programming to NYC public school students.
+    Mechanical Library is a non-commercial labor of love, with support by <a href="https://www.nycfirst.org">NYCFirst</a>, who provides meaningful and joyful STEM and robotics programming to NYC public school students.
       </p>
   <p>If you would like to become a partner or sponsor, please contact steve (at) turbek.com</p>
 </section>
