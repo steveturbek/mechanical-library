@@ -74,6 +74,10 @@ a:hover {
   text-decoration: underline;
 }
 
+dfn {
+  font-style: normal;
+  font-weight: bold;
+}
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {

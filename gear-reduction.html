@@ -43,41 +43,114 @@
  <section class="jumpTo"><b>Jump to</b>
           <a href="#Definition">Definition</a>
           <a href="#Key_Facts">Key Facts</a>
-          <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a>
+          <!-- <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a>
           <a href="#View_in_3D">View in 3D</a>
-          <a href="#Walkthrough">3D Walkthrough</a>
+          <a href="#Walkthrough">3D Walkthrough</a> -->
           <a href="#Display">Mechanical Library Display</a>
           <a href="#Images">Images</a>
           <a href="#Videos">Videos</a>
           <a href="#3D_Printing">3D Printing</a>
           <a href="#Lego">Lego</a>
-          <a href="#Weird_Fact">Weird Fact</a>
-          <a href="#DoubleCardan">Variation: Double Cardan</a>
+          <!-- <a href="#Weird_Fact">Weird Fact</a> -->
           <a href="#History">History</a>
-          <a href="#Math">Math</a>
+          <!-- <a href="#Math">Math</a> -->
           <a href="#Library">Library </a>  
           <a href="#Research">Research</a>  
-          <a href="#Related Mechanisms">Related Mechanisms</a> 
+          <!-- <a href="#Related Mechanisms">Related Mechanisms</a>  -->
         </section>
 
 <section><h2 id="Definition">Definition</h2>
-  <p>
+  <p>A <dfn>Gear</dfn> is a rotating round mechanical part with "teeth" that mesh to transmit rotational power.  They can be made of plastic or wood, but the most common material is metal, due to the wearing effect on the teeth.
+</p>
+  
+<p><dfn>Teeth</dfn> on gears offer several advantages over friction wheels.  
+  <ul>
+    <li>Teeth prevent slippage, so gears are always synchronized exactly with one another.</li>
+  
+    <li>Teeth design make it so that slight imperfections in the diameter or spacing of two gears can be a a bit off, for example if dirt gets in the machine.</li>
     
-      </p>
+    <li>Teeth make it easy to determine exact gear ratios. You just count the number of teeth on the two gears and divide by the smaller one. So if one gear has 100 teeth and another has 10, the gear ratio is 10:1.</li>
+  
+  </ul>
+
+
+</p>
+
+<p>The <dfn>Circular Pitch</dfn> is the diameter of the circle where a gear meshes at. It is not immediately obvious by looking at the teeth, .
+</p>
+
+<figure>
+  <img src="/img/gear-reduction/circular-pitch.svg" alt="Mechanical Gear Circular Pitch">
+  <figcaption>
+    The green line shows the Circular Pitch, the effective diameter of the gear
+    <footer><small>Source: Mechanical-Library.org</small></footer>
+  </figcaption>
+</figure>
+
+<p>
+  <dfn>Module</dfn> is the circular pitch divided by the number of teeth, usually written in millimeters. Gears will only mesh if the teeth have the same module.  
+</p>
+<figure>
+  <img src="/img/gear-reduction/module08and2.jpg" alt="Mechanical Gear Module" style="width:50%">
+  <figcaption>
+    Size comparison of Module 0.8 teeth (left) and Module 2 teeth (right)
+    <footer><small>Source: khkgears.net</small></footer>
+  </figcaption>
+</figure>
+
+
+<p><dfn>Diametral Pitch</dfn> The number of teeth divided by the circle diameter, e.g. 2 teeth per inch . (This measuement is used mainly where feet and inches are used.)  Gears will only mesh if the  teeth have the same Diametral Pitch.</p>
+
+<p>
+  <dfn>Pressure Angle</dfn> defines how the gears contact each other, and thus how the force is distributed along the tooth.  Standard pressure angles are 14.5, 20, and 25 degrees.  Gears must have the same pressure angle to mesh well.  
+</p>
+
+<p><dfn>Frequency</dfn> is how often a gear rotates in a set time.  Typically written as RPM (Revolutions per Minute)</p>
+
+<p><dfn>Period</dfn> is the time for a rotation. To calculate, divide 1 by frequency.</p>
+
+
+<p>
+  <dfn>Backlash</dfn> is the slip that occurs when gears change direction, because of the spacing between teeth. Highly efficient gear trains have a small amount of backlash, but must be carefully engineered and consturcted.  
+</p>
+
+  <p>
+    <dfn>Torque</dfn> is the measure of the rotational force applied to an object.</a>.  
+</p>    
+    
+
     </section>
       
 
 <section><h2  id="Key_Facts">Key Facts</h2>
-    <ul>
-      <li>a
-        
-      </li>
-    </ul>
+  <p>
+    To find the <dfn>Gear Ratio</dfn>, count the number of teeth on the “driven” gear, and divide it by the number of teeth on the “driving” gear. If the following gear has 100 teeth and the driving gear has 10, the ratio is 100:10 or 10:1.  This is also expressed as a ratio of 10. 
+  The gear ratio can also be computed using the pitch diameter (or even the radius) using the same equation: Ratio = Output Gear Diameter / Input Gear Diameter
+  </p>
+  
+  <p>
+    <dfn>Gear Trains</dfn> are created when two or more gears are made to interfere with each other in order to transmit power from one shaft to another. This is useful as one can get complex gear ratios by combining different gear pairs. In theory, one could create a 1,000,000,000:1 gear pair. but the first gear would be enormous!
+  </p>
+
+<p>
+    <dfn>Speed vs. Torque</dfn>
+
+    The key concept for gears is that speed and torque are directly related, and that gears of different sizes can control them.
+  </p>    
+
+    <p>
+      If the "driving" gear is the same size as the "following" gear, the rotation rate and torque of the second remains the same.  However, if the driving gear is twice as big as the following gear (2:1), the following gear will spin twice as fast and have half the torque. 
+    </p>
+
+<p>    In machinery, it is common to have a less powerful but fast spinning motor use a small gear to drive a larger gear with great torque.  In other cases, because a motor can only turn so fast, a large to small gear ratio can make the output much faster, but with less torque</p>
+
+<p>The transmission in a car is a device that switches different output gears so a motor can drive both slowly (first gear), or on highways (4th gear), or even in reverse.  This is more obvious in a Manual transmission, but the same principle happens in  "automatic" transmissions.  See below for an animations
+</p>
       </section>
     
     
       
-    
+<!--     
 <section><h2  id="Engineering Rules of Thumb">Engineering Rules of Thumb</h2>
       <ul><li>a</li></p>
     </section>
@@ -95,10 +168,14 @@
   <h2  id="Walkthrough">Walkthrough</h2>
 
 </section>
-
+ -->
 
 
 <section><h2  id="Display">Display</h2>
+  <p>
+    This model has a "Gear Train" of 10 gears.  The driving gear (in the top left) spins at approximately 1000 Rotations Per Minute (RPM). It drives a larger gear with 100 teeth, so the ratio is written as 1:10.  There are 9 other 1:10 gear pairs, so the final gear spins at .000001 RPM, which takes 1 year and 329 days of continuous operation to spin once around.
+  </p>
+
 </section>
 
 
@@ -106,13 +183,37 @@
 
 <section><h2  id="Images">Images</h2>
 
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ManualTransmissionAnimation.gif/512px-ManualTransmissionAnimation.gif?20170325023720" alt="ManualTransmissionAnimation">
+  <figcaption>
+    Manual transmission in a typical car
+    <footer><small>Source: Jahobr, CC0, via Wikimedia Commons</small></footer>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/img/gear-reduction/KMODDL-Reuleaux-G01.jpg" alt="G01 Compound Gear Train">
+  <figcaption>
+    G01 Compound Gear Train
+    <footer><small>Source: <a href="https://wayback.archive-it.org/2566/20180418123946/http://kmoddl.library.cornell.edu/model.php?m=41"> Cornell
+      KMODDL Reuleaux Collection</a></small></footer>
+  </figcaption>
+</figure>
+
 
 
 </section>
       
 
-
 <section><h2  id="Videos">Videos</h2>
+
+  <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/5q-BH-tvxEg?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+      <i>Arthur Ganson - Machine with Concrete</i> -A scultpture with so much gear reduction that the end gear is simply embedded in concrete
+      <footer><small>Source: <a href="https://www.arthurganson.com/concrete-1">arthurganson.com</a></small></footer>
+    </figcaption>
+  </figure>
 
     <figure>
         <iframe loading="lazy" src="https://www.youtube.com/embed/JOLtS4VUcvQ?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
@@ -151,14 +252,15 @@
 
 
 <section><h2  id="Lego">Mechanism in Legos</h2>
+    Legos have long supported gears in their models.
+<ul>
+      <li><a href="http://gears.sariel.pl">Lego Gear Ratio Calculator with speeds and torque</a></li>
+      
+<li>  <a href="https://marian42.de/gears/?gears=default&targetratio=3/4">Lego Gear Ratio Calculator, works backwards from desired reduction</a></li>
     
-    <a href="http://gears.sariel.pl">Lego Gear Ratio Calculator with speeds and torque</a>
-    
-<a href="https://marian42.de/gears/?gears=default&targetratio=3/4">Lego Gear Ratio Calculator, works backwards from desired reduction</a>
-  
-https://education.lego.com/en-us/lessons/advancing-with-spm/gear/
+  <li><a href="https://education.lego.com/en-us/lessons/advancing-with-spm/gear/">Lego Educational material on Gears</a></li>
+</ul>
 
-https://education.lego.com/en-us/lessons/sm/gears/
 
 
     <figure>
@@ -204,95 +306,66 @@ https://education.lego.com/en-us/lessons/sm/gears/
 
 
 <section><h2 id="History">History</h2>
-  
-    https://www.amazon.com/Kinematic-Geometry-Gearing-David-Dooner/dp/1119950945
 
-    
-    Early gears were made from wood with cylindrical pegs for cogs and were often lubricated with animal fat grease. Gears were also used in wind and water wheel machinery for decreasing or increasing the provided rotational speed for application to pumps and other powered machines. An early gear arrangement used to power textile machinery is illustrated in the following figure. The rotational speed of a water or horse drawn wheel was typically too slow to use, so a set of wooden gears needed to be used to increase the speed to a usable level.
-    The industrial revolution in Britain in the eighteenth century saw an explosion in the use of metal gearing. A science of gear design and manufacture rapidly developed through the nineteenth century.
-
-Today, the most significant new gear developments are in the area of materials. Modern metallurgy has greatly increased the useful life of industrial and automotive gears, and consumer electronics has driven plastic gearing to new levels of lubricant-free reliability and quiet operation.
-    https://www.efunda.com/DesignStandards/gears/gears_history.cfm
-    https://www.efunda.com/DesignStandards/gears/gears_compound_train.cfm
-    https://www.efunda.com/DesignStandards/gears/gears_nomenclature.cfm
-    https://en.wikipedia.org/wiki/Gear_train
-
-efficiency of gears from manufacturer https://khkgears.net/new/gear_knowledge/abcs_of_gears-b/gear_types_and_characteristics.html
-
-
-Law of Gearing
-The common normal at the point of contact between a pair of teeth must always pass through the pitch point for all mating gear positions, according to the law of gearing. The design of the gear profile is based on this law. This is a must for the two gears to function properly.
-The angular velocity between two mating gears always remains constant. Therefore, from the Law of gearing we can derive the relationship as:
-where w is angular velocity of gear, n is the gear speed, d is the pitch diameter of the gear, T is number of teeth on the gear.
-
-
-Effect of gear ratio on speed:
-The configuration is known as reduction gear drive when the number of gears on the output shaft is more than the
-number of gears on the input shaft. The speed of output shaft will be les than the input shaft.
-        Cookie settings
-            
-4
-                    The output shaft will have a higher speed than the input shaft if the configuration is reversed, i.e. the number of gears on the output shaft is less than the number of gears on the input shaft.
-The best example to understand this is the automotive gear box. For lower speeds, we must drive in the low gears (1st or 2nd gear) but as the speed increases we shift to higher gears.
-Gear trains are created when two or more gears are made to interfere with each other in order to transmit power from one shaft to another. In a vehicle, power is transferred from engine to the wheels through the gearbox.
-A gear assembly with two or more gears is commonly referred to as a Gear Train!
-  Types of gear train:
-There are generally four types of gear trains.
-Simple Gear Train Compound Gear Trains Reverted gear Trains Epicyclic Gear Trains
-Simple Gear Trains:
-A simple gear train is made up of single gear connected to each shaft, one linked to the drive shaft (input) and the other to the driven shaft (output). The motion of the driver gear and the motion of the driven gear will always be in the opposing directions for a simple two geared train.
-In a multi geared simple gear train, the gear which is not connected to drive shaft of driven shaft is called as idler.
-
-  Simple Gear Train Assembly
- Where n is the speed of the respective gear.
-Compound Gear Trains:
-In a compound gear train, the intermediate gear is a compounded gear i.e. there will be more than one gear on the intermediate axil/shaft. The co-axially connected gears will rotate with same speed, but will have different outputs.
-Compound Gear Train Assembly
-Where n is the speed of the respective gear.
-Reverted Gear Trains:
-The compound gear train where the input and output gears are on the same axis is know as reverted gear train. The input and output shafts are aligned on the same axis, and they rotate at different speeds. This type of assembly is optimal for compact spaces.
-   
- 
-Reverted Gear Train Assembly
-Where n is the speed of the respective gear.
-Epicyclic Gear Trains:
-One of the most complex and widely used gear train assembly is the Epicyclic gear train. An epicyclic gear train (also known as a planetary gearset) is made up of two gears with the center of one rotating around the center of the other. A carrier connects the two gears' centers and turns the planet and sun gears' pitch circles so that they roll without slipping. An epicycloid curve is traced by a point on the planet gear's pitch circle. The solar gear is fixed in this simplified example, while the planetary gears rotate around it.
-
-The angular velocity between two mating gears always remains constant.
-A gear assembly with two or more gears is commonly referred to as a Gear Train. Different types of gear trains have different application.
-Epicyclic gear train is one of the complex gear assemblies. It is used in watch and even in automatic transmissions in vehicles.
-
-
-The torque produced at the output shaft is Gear Ratio times the torque produced at the input shaft.
-
-
-https://www.mechnflow.com/post/gears-2
-
-
-    <p>
-    
-    </p>
-<p><a href="https://wayback.archive-it.org/2566/20180418140920/http://kmoddl.library.cornell.edu/tutorials/09/">Historical notes on P1 - Hook's joint/universal joint/Cardan joint
-</a>
-by Daina Taimina
+<p>
+  Early gears were made from wood with cylindrical pegs for cogs and were often lubricated with grease from animal fat. Gears were used to change the rotational speed from water wheels or wind mills to power pumps or grain mills. The speed of a horse was typically too slow to use, so wooden gears increased the speed.
 </p>
 
-  <figure>
-  	<img src="img/reduction-gear/" alt="">
-  	<figcaption>
-  		Caption
-      <footer><small>Source: <a href="">Wikipedia</a></small></footer>
-  	</figcaption>
-  </figure>
 
+<p>
+  The industrial revolution of the 1800's saw an explosion in the use of metal gearing. A science of gear design and manufacture rapidly developed through the century. 
+</p>
+
+
+
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Rosmolen_Erve_Kots_%2801%29.jpg/1280px-Rosmolen_Erve_Kots_%2801%29.jpg" alt="">
+  <figcaption>
+    A horse-powered wooden gear mill
+    <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Rosmolen_Erve_Kots_(01).jpg">Rasbak, via Wikimedia Commons</a></small></footer>
+  </figcaption>
+</figure>
+
+
+
+
+<figure>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Cog_Wheel_and_stone_spindle.jpg" alt="A traditional wooden Cog wheel and Spindle">
+  <figcaption>
+    A traditional wooden Cog wheel and Spindle
+    <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Cog_Wheel_and_stone_spindle.jpg">Felix Haas, CC BY-SA 4.0, via Wikimedia Commons</a></small></footer>
+  </figcaption>
+</figure>
+
+
+
+<figure>
+  <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Terdeghem.-_Cog_wheels_of_Steenmeulen_%283%29.jpg/1280px-Terdeghem.-_Cog_wheels_of_Steenmeulen_%283%29.jpg" alt="Wooden gears in a mill in Steenmeulen, Terdeghem.">
+  <figcaption>
+    Complex and very large mechanisms were made with wooden gears, such as this mill in Steenmeulen, Terdeghem.
+    <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Terdeghem.-_Cog_wheels_of_Steenmeulen_(3).jpg">Wikimedia Commons</a></small></footer>
+  </figcaption>
+</figure>
+
+
+
+<figure>
+  <img src="/img/gear-reduction/South-pointing-chariot-a-Modern-design-and-b-modern-prototype.ppm" alt="South Pointing Chariot" >
+  <figcaption>
+    An ancient Chinese "<a href="https://en.wikipedia.org/wiki/South-pointing_chariot">South Pointing Chariot</a>" used gears to point in a direction, accounting for wheel movement.
+    <footer><small>Source: WMR Kinematic Control Using Underactuated Mechanisms for Goal Direction and Evasion by Jorge U. Reyes-Muñoz, Edgar A. Martínez-García, Ricardo Rodríguez-Jorge and Rafael Torres-Córdoba</small></footer>
+  </figcaption>
+</figure>
+
+ 
 </section>
-
+<!-- 
 <section><h2 id="Math">Math
   </h2>
   <p>
 The rotational speed of one gear to another
 
-    </p>
+    </p> -->
 
     
 </section>
@@ -333,6 +406,26 @@ The rotational speed of one gear to another
 <section><h2 id="Research">Research</h2>
   <ul>
     <li><a href="https://wayback.archive-it.org/2566/20180418125809/http://kmoddl.library.cornell.edu/model.php?m=494">Model: 074 Worms and Gears on Cornell University KMODDL</a> (from Clark Collection)</li>
+
+    <li><a href="   https://wayback.archive-it.org/2566/20180418123946/http://kmoddl.library.cornell.edu/model.php?m=41">Model: G01 Compound Gear Train, Cornell
+      KMODDL</a> (from Reuleaux Collection)</li>
+
+
+
+    <li><a href="https://en.wikipedia.org/wiki/gears">Wikipedia Gears</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Torque">Torque</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Gear_train">Gear Train</a></li>
+    <li><a href="https://www.mechnflow.com/post/gears-2">More on Gears</a></li>
+
+
+    <li><a href="https://khkgears.net/new/gear_knowledge/">KHK Gear handbooks - excellent</a></li>
+    <li><a href="https://khkgears.net/new/gear_knowledge/abcs_of_gears-b/gear_types_and_characteristics.html">KHK on efficiency of gears</a></li>
+    <li><a href="https://khkgears.net/new/gear_knowledge/gear-nomenclature/module-2-gears.html">KHK on gear module</a></li>
+    <li><a href="https://www.efunda.com/DesignStandards/gears/gears_history.cfm">Gear History</a></li>
+
+    <li><a href="https://www.efunda.com/DesignStandards/gears/gears_compound_train.cfm">Gear Trains</a></li>
+    <li><a href="https://www.efunda.com/DesignStandards/gears/gears_nomenclature.cfm">Gear Nomenclature</a></li>
+
   </ul>  
 </section>
 
