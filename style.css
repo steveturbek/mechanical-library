@@ -281,7 +281,7 @@ dfn {
 #content section figure {
   /* display: block; */
   /* position: relative; */
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: var(--main-border-radius);
   border: var(--main-border);
   /* padding: 20px; */
@@ -300,8 +300,8 @@ figcaption {
   /* position: absolute; */
   background: var(--main-border-color);
   /* color: white; */
-  padding: 10px;
-  width: 100%;
+  padding: 15px;
+  /* width: 100%; */
 }
 
 /* #content section figure iframe {
