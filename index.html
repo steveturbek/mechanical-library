@@ -45,15 +45,16 @@ src="img/site/website-mechanical-library-concept-one-image.png"
 
 
 <p>
-  The Mechanical Library shows the mechanisms that make our world work, connecting physical mechanisms & digital learning. 
-  It includes a “Wall of Mechanisms” museum exhibit of motorized physical models and website. 
-  Each model has a QR code that can bring up information, videos, and 3D models to explain how they work and how they are used
-  The cabinets are designed to travel to schools and museums.
-    We hope to support STEM education by sparking the "engineering mindset" to analyze how things work.</p>
-    
+  The Mechanical Library shows the mechanisms that make our world work. 
+<p>
+    This project is an open-source exhibit and curriculum for middle and high school students to introduce mechanical engineering. 
+    The “Wall of Mechanisms” motorized physical models each have a QR code linking to online information, videos, and 3D models that explain how they work and how they are used.
+</p>
+    <p>We hope to support STEM education by sparking curiosity in how things work.</p></p>
+
         <p>
           <b>The exhibit is currently in early development, follow <a href="https://www.instagram.com/mechanical.library">@mechanical.library</a>
-             and  <a href="https://www.instagram.com/steveturbek/">@steveTurbek</a> on Instagram </b>
+             and  <a href="https://www.instagram.com/steveturbek/">@SteveTurbek</a> on Instagram </b>
           </p>
 
 </div>		
@@ -73,7 +74,7 @@ src="img/site/website-mechanical-library-concept-one-image.png"
       font-size: 150%;
     }
     
-    .library-item-block {
+    .library-item-block, .library-item-preview {
       width: 250px;
       height: 300px;
       display: inline-flex;
@@ -86,37 +87,45 @@ src="img/site/website-mechanical-library-concept-one-image.png"
       filter: var(--main-dropshadow-hover);
     }
     
-    .library-item-block a {
-      color: var(--main-bg-color);
-    }
     
-    .library-item-block .caption {
+    
+    .library-item-preview img {
+      width: 250px; 
+    }
+
+
+    .library-item-block-caption {
       padding-left: 10px;
-      font-size: 18px;
+      font-size: 20px;
+      display: block;
+      color: var(--main-bg-color); 
+      height:40px;
+      /* border: 1px solid red;; */
+      padding-top: 10px;
     }
     
-    .library-item-block .caption b {
+    .library-item-block-caption b {
       font-weight: 900;
       font-size: 24px;
     }
     /*----------------------RESPONSIVE--------------------- */
     
     @media screen and (max-width: 510px) {
-      .library-item-block {
+      .library-item-block{
         width: 99%;
         height: 100vw;
         display: block;
         border: 0;
       }
     
-      .library-item-block .caption {
+      .library-item-block-caption {
         padding: 10px;
         font-size: 18px;
         background-color: var(--main-text-color);
         color: var(--main-bg-color);
       }
     
-      .library-item-block .caption b {
+      .library-item-block-caption b {
         font-weight: 900;
         font-size: 24px;
       }
@@ -136,7 +145,7 @@ src="img/site/website-mechanical-library-concept-one-image.png"
 
     <h2 id="TheLibraryh2">The Library - In Progress</h2>
     <p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
-    <p><a href="img/site/3up-display-cases.usdz"> View in-progress exhibit 3D model in Apple Quick Look AR</a></p>
+    <!-- <p><a href="img/site/3up-display-cases.usdz"> View in-progress exhibit 3D model in Apple Quick Look AR</a></p> -->
 
 
       <div class="library-item-block">
@@ -144,7 +153,7 @@ src="img/site/website-mechanical-library-concept-one-image.png"
       <video autoplay muted loop playsinline id="myVideo2"  class="library-block-video">
         <source src="img/gear-reduction/gear-reduction-cover.mp4" type="video/mp4">
       </video>
-          <div class="caption">
+          <div class="library-item-block-caption">
               Reduction Gears
                     </div>
                   </a>
@@ -156,7 +165,7 @@ src="img/site/website-mechanical-library-concept-one-image.png"
           <video autoplay muted loop playsinline id="myVideo"  class="library-block-video">
           <source src="img/belt-chain/belt-chain-cover.mp4" type="video/mp4">
         </video>
-        <div class="caption">
+        <div class="library-item-block-caption">
         Belts & Chains
                       </div>
                     </a>
@@ -169,12 +178,70 @@ src="img/site/website-mechanical-library-concept-one-image.png"
     <video autoplay muted loop playsinline id="myVideo"  class="library-block-video">
       <source src="img/universal-joint/ujoint-cover.mp4" type="video/mp4">
     </video>
-        <div class="caption">
+        <div class="library-item-block-caption">
             <!-- <b>#000</b> -->
             Universal Joint
                   </div>
                 </a>
       </div>
+
+      <div class="library-item-block">
+        <a href="gear-right-angle.html">
+      <video autoplay muted loop playsinline id="myVideo"  class="library-block-video">
+        <source src="img/gear-right-angle/gear-right-angle-cover.mp4" type="video/mp4">
+      </video>
+          <div class="library-item-block-caption">
+              <!-- <b>#000</b> -->
+              Right Angle Gears
+                    </div>
+                  </a>
+        </div>
+
+          <div class="library-item-preview">
+          <div>
+      <img src="img/preview-images/slot-yoke.png">
+        <div class="library-item-block-caption">
+            <!-- <b>#000</b> -->
+            Slotted Yokes
+                  </div>
+                </div>
+      </div>
+
+
+      <div class="library-item-preview">
+<div> <!-- <a href="#"> -->
+          <img src="img/preview-images/ratchet.png">
+            <div class="library-item-block-caption">
+                <!-- <b>#000</b> -->
+                Ratchets, Pawls, & Stops
+                      </div>
+  </div>                  <!-- </a> -->
+        </div>
+  
+        
+          
+
+                  <div class="library-item-preview">
+                    <div> <!-- <a href="#"> -->
+                              <img src="img/preview-images/geneva.png">
+                                <div class="library-item-block-caption">
+                                    <!-- <b>#000</b> -->
+                                    Geneva Movement
+                                          </div>
+                      </div>                  <!-- </a> -->
+                            </div>
+
+
+        <div class="library-item-preview" >
+          <div> <!-- <a href="#"> -->
+                    <img src="img/preview-images/differential.png">
+                      <div class="library-item-block-caption">
+                          <!-- <b>#000</b> -->
+                          Differential gear
+                                </div>
+            </div>                  <!-- </a> -->
+                  </div>
+
   </section>
 </div>
 
@@ -186,7 +253,7 @@ src="img/site/website-mechanical-library-concept-one-image.png"
 <!-- ------------------------------------------------------------- -->
 <div>
   <style>
-  #TheLibraryFuture #cabinet-holder{
+  /* #TheLibraryFuture #cabinet-holder{
 vertical-align: top;
 display: flex;
   }
@@ -212,10 +279,10 @@ display: block;
 
 #TheLibraryFuture .cabinet b {
   margin-left: -30px;
-}
+} */
 
 /*--------- RESPONSIVE ------------*/
-@media screen and (max-width: 510px) {
+/* @media screen and (max-width: 510px) {
   #TheLibraryFuture #cabinet-holder {
     display: block;
   }
@@ -224,7 +291,7 @@ display: block;
         width: 99%;
         margin-right: 0;
       }
-    }
+    } */
     
 </style>
 
@@ -254,97 +321,51 @@ display: block;
 -->
 
 <div id="cabinet-holder">
-  
   <div class="cabinet">
-  <h3>Basic Components</h3>
-  <ol>
-    <li><a href="gear-reduction.html">1,000,000:1 Gear Reduction</a></li>
-    <li><a href="belts-chains.html">Belts & Chains</a></li>
-    <li>Miter and Bevel Gears, Worms</li>
-    <li>Slotted Yoke & Quick Return & Slider Crank</li>
-    <!-- <li>Weird Gears, missing teeth gears</li> -->
-    <!-- <li>Gearless transmission “Elbow” & Spring elbow</li> -->
-    <!-- <li>Rack & Pinion</li> -->
-    <!-- <li>Ropes, Wires, & Pulleys</li> -->
-    <li>Ratchet Pawls & Stops</li>
-    <!-- <li>Cam & Follower</li>  -->
-    <!-- Cam & Follower (external and in groove / Cams & Eccentric Drive 89, heart shape and wave wheel) -->
-    <!-- <li>Magnetic gears</li>
-    <li>Fluids (hydraulics) & Air pressure (pneumatics)</li> -->
-<!-- spings linear and tortion -->
-
-<!-- </ol>
-  </div>
-  
-  <div class="cabinet">
-  <h3>Complex Mechanisms</h3>
-  <ol> -->
-
-    <!-- Gearless transmission “Elbow” & Spring elbow -->
-
-    
-    <!-- <li>Magnetic gears</li> -->
-    <li>Geneva Movement</li>
-    <!-- <li>Friction & Mechanical clutch</li> -->
-    <li>Differential Gear</li>
-    <li><a href="universal-joint.html">Universal Joint</a></li>
-    <!-- <li>Cycloidal drive</li>  -->
-    <!-- <li>Constant Velocity Joint</li>  -->
-    <!-- https://en.wikipedia.org/wiki/Continuously_variable_transmission -->
-    <!-- <li>Steam & Combustion Piston</li> -->
-    <!-- <li>Crankshaft</li> -->
-    <!-- <li>Cam & Follower, external and in groove</li> -->
-    <!-- <li>Cams & Eccentric Drive 89, heart shape and wave wheel</li> -->
-  
-
-  </ol>
-  
-  <!-- 
-Ropes, Wires, & Pulleys ?
-muscle wire nitinol
-One way bearing - roller clutch
-Constant velocity joint
-#27 Multiple Gear Drive 
-502. An “epicyclic train.
-   -->
-  </div>
-  
-  
-  <div class="cabinet">
-  <h3>Ways to build a robotic hand</h3>
-  <ol>
-    
-  <li>Bar linkages </li>
-  <li>XYZ belt drive</li>
-  <li>Linear actuators</p>
-  <li>Pulley / wire</li>
-  <li>Motor & Gears</li>
-  <li>Pistons</li>
-  <li>Compliant mechanism</li>
-  <li>Soft robotics</li>
-  </ol>
-
-  <!-- <ol>
-    <b>Moving around</b>
-    <li>Wheels</li>
-    <li>Treads</li>
-    <li>Legs / Feet</li>
-    <li>Drone propellor</li>
-    <b>Reaching an arm</b>
-    <li>Motors & gears</li>
+    <h3>Ways to build a robotic hand</h3>
+    <ol>
+      
     <li>Bar linkages </li>
-    <li>Pistons (& Wire pulleys)</li>
-    <li>XYZ belt drive</li>
-    <b>Grabbing an item</b>
-    <li>Motor / Gears</li>
-    <li>Pulley / wire</li>
+    <li>Belt drive</li>
+    <li>Linear actuators</p>
+    <li>Pulleys & cables</li>
+    <li>Motor & Gears</li>
+    <li>Pistons</li>
     <li>Compliant mechanism</li>
     <li>Soft robotics</li>
-    
-  </ol> -->
-  </div>
-  <!--
+    </ol>
   
+  <h3>Potential Future Mechanisms</h3>
+  <ol> 
+    <li>Bar linkages </li>
+    <li>Capstan Drive</li>
+    <li>Weird Gears, missing teeth gears</li>
+    <li>Gearless transmission “Elbow” & Spring elbow</li>
+    <li>Rack & Pinion</li>
+    <li>Ropes, Wires, & Pulleys</li>
+    <li>Cam & Follower (external and in groove / Cams & Eccentric Drive 89, heart shape and wave wheel)</li> 
+    <li>Magnetic gears</li>
+    <li>Friction & Mechanical clutch</li>
+    <li>Cycloidal drive</li> 
+    <li>Constant Velocity Joint</li> 
+    <li>Continuously variable transmission</li>
+    <li>Steam & Combustion Piston</li>
+    <li>Crankshaft</li>
+        <li>Fluids (hydraulics) & Air pressure (pneumatics)</li>
+<li>Springs linear and tortion</li>
+<li>Muscle wire nitinol</p>
+<li>One way bearing - roller clutch</p>
+<li>#27 Multiple Gear Drive </li>
+<li>#502 An epicyclic train</p>
+
+
+  </ol>
+  </div>
+  
+  
+
+
+  <!-- 
   (Bonus) 12 ways to power a bicycle
   Common Chain 
   Timing Belt

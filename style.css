@@ -12,14 +12,9 @@
 
   --main-border-radius: 1;
   --main-dropshadow: drop-shadow(1px 1px 1px var(--main-dropshadow-color));
-  --main-dropshadow-hover: drop-shadow(
-    5px 5px 5px var(--main-dropshadow-color)
-  );
+  --main-dropshadow-hover: drop-shadow(5px 5px 5px var(--main-dropshadow-color));
 
-  --main-background-image: linear-gradient(
-      var(--main-highlight-color) 1px,
-      transparent 1px
-    ),
+  --main-background-image: linear-gradient(var(--main-highlight-color) 1px, transparent 1px),
     linear-gradient(to right, var(--main-highlight-color) 1px, transparent 1px);
 
   /* --main-div-min-width: 500px; */
@@ -67,7 +62,7 @@ li {
 
 a {
   color: var(--main-link-color);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a:hover {
@@ -259,7 +254,7 @@ dfn {
 
 #content h3 {
   /* font-size: 150%; */
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 0;
 }
