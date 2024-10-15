@@ -100,10 +100,15 @@ src="img/site/website-mechanical-library-concept-one-image.png"
       display: block;
       color: var(--main-bg-color); 
       height:40px;
-      /* border: 1px solid red;; */
+      /* border: 1px solid red; */
       padding-top: 10px;
     }
     
+    .library-item-block a {
+    text-decoration: underline;
+    text-decoration-color: var(--main-bg-color); 
+    
+    }
     .library-item-block-caption b {
       font-weight: 900;
       font-size: 24px;
@@ -111,18 +116,23 @@ src="img/site/website-mechanical-library-concept-one-image.png"
     /*----------------------RESPONSIVE--------------------- */
     
     @media screen and (max-width: 510px) {
-      .library-item-block{
+      .library-item-block, .library-item-preview{
         width: 99%;
-        height: 100vw;
+        height: 110vw;
         display: block;
         border: 0;
+        
       }
     
+      .library-item-preview img {
+      width: 99%; 
+    }
       .library-item-block-caption {
         padding: 10px;
-        font-size: 18px;
+        font-size: 28px;
         background-color: var(--main-text-color);
         color: var(--main-bg-color);
+        
       }
     
       .library-item-block-caption b {
