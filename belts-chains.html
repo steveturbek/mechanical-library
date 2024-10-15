@@ -43,9 +43,9 @@
  <section class="jumpTo"><b>Jump to</b>
           <a href="#Definition">Definition</a>
           <a href="#Key_Facts">Key Facts</a>
-          <!-- <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a>
           <a href="#View_in_3D">View in 3D</a>
-          <a href="#Walkthrough">3D Walkthrough</a> -->
+          <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a>
+          <!-- <a href="#Walkthrough">3D Walkthrough</a> -->
           <a href="#Display">Mechanical Library Display</a>
           <a href="#Images">Images</a>
           <a href="#Videos">Videos</a>
@@ -191,33 +191,27 @@
 
 
 
-
-<section><h2 id="View_in_3D">View in 3D</h2>
-<p>These models use <a href="https://developer.apple.com/augmented-reality/quick-look/">Apple "Quick Look AR"</a> (Augmented Reality).  </p>
-<p>  <b>To use on iPhone</b>: click link below, then click the model's image again.  
-  Hold phone over flat surface such as a table, and model should appear.  
-  One can move the phone around to inspect the model, even the insides.  
-  It can be scaled up by pinching with two finger tips, and rotated by rotating with two finger tips.
-</p>
-<p>  <b>To use on Mac</b>: click link below, then open the downloaded USDZ file in Preview app. It can be rotated by dragging the cursor.
-</p>
-<p>Usage on other devices will be supported as time and resources permit.
-</p>
-
-<figure>
-<a href="img/belt-chain/belt-chain.usdz">
-      <img src="img/belt-chain/belt-chain-model.jpg" alt="Belt & Chain Display 3D modelApple Quick Look AR">
-  </a>    
-<figcaption>
-  <a href="img/belt-chain/belt-chain.usdz">
-    Belt & Chain Display 3D model
- </a>
-      <footer><small>Source:mechanical-library.org</a></small></footer>
-    </figcaption>
-  </figure>
+  <section>
+    <h2 id="View_in_3D">View in 3D</h2>
   
-</section>  
+    <script type="module" src="model-viewer.min.js"></script>
+  
+    <model-viewer
+      alt="Mechanical Library Belts & Chains 3D model"
+      src="img/belt-chain/belt-chain.glb"
+      ar
+      shadow-intensity="1"
+      camera-controls
+      touch-action="pan-y"
+      poster="img/belt-chain/belt-chain.webp"
+      style="width: 800px; height: 500px"
+    ></model-viewer>
+  
+    <p><a href="img/belt-chain/belt-chain.usdz" rel="ar">iPhone Augmented Reality Viewer</a></p>
+    <!-- <p><a href="https://developer.apple.com/augmented-reality/quick-look/">More detail on Augmented Reality</a></p> -->
+  </section>
 
+  
 
 <!--     
 
