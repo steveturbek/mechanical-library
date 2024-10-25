@@ -321,6 +321,10 @@ figcaption {
   list-style-type: circle;
 }
 
+model-viewer {
+  width: 100%;
+}
+
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {
@@ -341,8 +345,4 @@ figcaption {
   .jumpTo a {
     display: inline-block;
   }
-}
-
-section model-viewer {
-  width: 100%;
 }
