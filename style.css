@@ -153,6 +153,9 @@ dfn {
 /*----------------------RESPONSIVE--------------------- */
 
 @media screen and (max-width: 510px) {
+  #header {
+    gap: 0;
+  }
   #header svg {
     width: 80px;
   }
