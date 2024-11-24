@@ -19,8 +19,6 @@
 
   --main-background-image: linear-gradient(var(--main-highlight-color) 1px, transparent 1px),
     linear-gradient(to right, var(--main-highlight-color) 1px, transparent 1px);
-
-  /* --main-div-min-width: 500px; */
   --main-div-max-width: 800px;
 }
 
