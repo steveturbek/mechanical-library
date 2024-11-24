@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@200;400;600&display=swap");
+@font-face {
+  font-family: er;
+  src: url("/img/site/er.woff2") format("woff2"), url("/img/site/er.woff") format("woff");
+}
 
 :root {
   --main-bg-color: white;
@@ -41,7 +44,7 @@ body {
   background-image: var(--main-background-image);
   background-size: 18px 18px;
 
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 p {
   line-height: 120%;
@@ -109,14 +112,15 @@ dfn {
   /* justify-content: left; */
   text-align: left;
   margin-bottom: 20px;
+  vertical-align: middle;
 }
 
 #mechanical-library-logo {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
 
   padding-top: 4px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 #mechanical-library-logo .gear {
@@ -138,7 +142,8 @@ dfn {
 }
 
 #header #mechanical-library-title {
-  font-size: 36px;
+  font-family: "er", Helvetica, Arial, sans-serif;
+  font-size: 48px;
   padding: 0;
   margin: 0;
   font-weight: 200;
@@ -161,7 +166,6 @@ dfn {
   }
 
   #header #mechanical-library-title {
-    font-size: 36px;
     line-height: 80%;
     padding-top: 8px;
   }
@@ -197,7 +201,7 @@ dfn {
   right: 10%; */
   /* color: var(--main-bg-color); */
   font-size: 3em;
-  /* font-family: IBM Plex Mono; */
+  font-family: "er", Helvetica, Arial, sans-serif;
   font-weight: 200;
   word-wrap: break-word;
   /* -webkit-filter: var(--main-dropshadow);
@@ -244,11 +248,13 @@ dfn {
 /*--------------------------------------------------------- */
 
 #content h1 {
+  font-family: "er", Helvetica, Arial, sans-serif;
   font-size: 200%;
   font-weight: 400;
 }
 
 #content h2 {
+  font-family: "er", Helvetica, Arial, sans-serif;
   font-size: 200%;
   font-weight: 200;
   margin-top: 0;
