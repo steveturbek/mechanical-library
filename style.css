@@ -159,13 +159,19 @@ dfn {
   #header {
     gap: 0;
   }
-  #header svg {
+  /* #header svg {
     width: 80px;
+  } */
+  #mechanical-library-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
   }
 
   #header #mechanical-library-title {
-    line-height: 80%;
-    padding-top: 8px;
+    font-size: 36px;
+    /* line-height: 80%; */
+    /* padding-top: 8px; */
   }
 }
 
