@@ -38,82 +38,80 @@
       </video>
       <div class="caption">
           <b>#005</b>
-          Rotational To Linear
+          Rotational to Linear
       </div>
         </div> 
 
- <!-- <section class="jumpTo"><b>Jump to</b>
+ <section class="jumpTo"><b>Jump to</b>
           <a href="#Definition">Definition</a>
           <a href="#Key_Facts">Key Facts</a>
-          <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a>
+          <!-- <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a> -->
           <a href="#View_in_3D">View in 3D</a>
-          <a href="#Walkthrough">3D Walkthrough</a>
+          <!-- <a href="#Walkthrough">3D Walkthrough</a> -->
           <a href="#Display">Mechanical Library Display</a>
           <a href="#Images">Images</a>
           <a href="#Videos">Videos</a>
-          <a href="#3D_Printing">3D Printing</a>
+          <a href="#3D_Printing">3D Printing</a> 
           <a href="#Lego">Lego</a>
-          <a href="#Weird_Fact">Weird Fact</a>
-          <a href="#DoubleCardan">Variation: Double Cardan</a>
+          <!-- <a href="#Weird_Fact">Weird Fact</a> -->
           <a href="#History">History</a>
-          <a href="#Math">Math</a>
-          <a href="#Library">Library </a>  
-          <a href="#Research">Research</a>  
-          <a href="#Related Mechanisms">Related Mechanisms</a> 
-        </section> -->
+          <!-- <a href="#Math">Math</a> -->
+                    <a href="#Research">Research</a>  
+          <!-- <a href="#Related Mechanisms">Related Mechanisms</a>  -->
+        </section>
 
 <section><h2 id="Definition">Definition</h2>
-      <p>Rotary motion has existed always in the natural world, river water turning a mill's waterwheel or a donkey walking in a circle around a well.  These early machines harnessed the power to a rotational tool like a flour mill.  Only in modern time was this rotational power converted into linear motion.  In a sense, these are some of the earliest modern machines.
+      <p>Rotary motion was the first motion taken from natural power, river water turning a mill's waterwheel or a donkey walking in a circle around a well.  These early machines harnessed the rotational power to a rotational tool like a flour mill.  Only in modern time was this rotational power converted into linear motion.  This section covers three quite old inventions. In a sense, these are some of the earliest modern machines.
       </p>
-        <p>Converting rotary motion to linear has the obvious problem of running out of the linear direction.  A spinning wheel will eventually run out of thread.  So the rotational motion is usually converted into a repetitive back-and-forth linear motion.</p>
-        <p>There are multiple ways to convert rotary motion to repetitive linear motion.  This section covers three quite old models.
-        </p>
+        
+<p>Rotational to Linear mechanisms convert rotating motion into repetitive back-and-forth linear straight-line motion. The three main types are:</p>
+<p><dfn>Slider-Crank</dfn>: A rotating crank connects to a slider via a connecting rod, creating reciprocating linear motion. Common in engines and compressors.</p>
+<p><dfn>Scotch Yoke</dfn>: A pin on a rotating disk moves within a slotted yoke, creating pure sinusoidal motion. Used in valve actuators and some specialized engines.</p>
+<p><dfn>Whitworth Quick Return</dfn>: An offset crank mechanism where the forward stroke takes longer than the return stroke. Common in machine tools like shapers where work is done only on the forward stroke.</p>
 
+<p>With the exception of the Quick Return, these mechanisms can be run in either direction. The slider crank is visible on the outside of a steam train engine.  A gasoline engine piston crank is similar as wel.</p>
 
       </section>
       
-<!-- 
+
 <section><h2  id="Key_Facts">Key Facts</h2>
     <ul>
-      <li>
-        The rotational velocity of the output shaft is not constant. It will speed up and slow down during a rotation, causing wobble.
-        The greater the angle, the bigger the wobble.
-      </li>
-      <li>You can eliminate the wobble by putting 2 universal joints together, also known as a “Double Cardan Joint”.</li>
-      <li>
-        There are other joints that are 'constant velocity', but are more complex (see other mechanisms)
-      </li>
+      
+      <li>Slider-Cranks have higher mechanical efficiency but more parts and friction points.</li>
+<li>Scotch Yokes provide true sinusoidal motion but experience high sliding friction. These mechanisms are less used in modern times as the yoke tends to wear out due to friction.</li>
+<li>Side forces must be managed in all designs to prevent binding and wear.</li>
+<li>The stroke length is determined by the crank radius and offset distance.</li>
     </ul>
-      </section> -->
+      </section>
     
     
       
 <!--     
 <section><h2  id="Engineering Rules of Thumb">Engineering Rules of Thumb</h2>
-      <ul><li>One generally wants to keep the angle below 35°, with a max angle of 45°.</li></p>
+      <ul><li>One generally wants to keep the angle below 35°, with a max angle of 45°.</li><ul>
     </section>
      -->
 
 
-<!-- <section>
+<section>
   <h2 id="View_in_3D">View in 3D</h2>
 
   <script type="module" src="model-viewer.min.js"></script>
 
   <model-viewer
     alt="Mechanical Library Universal Joint 3D model"
-    src="img/universal-joint/universal-joint.glb"
+    src="img/rotational-to-linear/rotational-to-linear.glb"
     ar
     shadow-intensity="1"
     camera-controls
     touch-action="pan-y"
-    poster="img/universal-joint/universal-joint.webp"
+    poster="img/rotational-to-linear/rotational-to-linear.png"
     style="height: 600px"
   ></model-viewer>
 
-  <p><a href="img/universal-joint/universal-joint.usdz" rel="ar">iPhone Augmented Reality Viewer</a></p> -->
+  <p><a href="img/rotational-to-linear/rotational-to-linear.usdz" rel="ar">iPhone Augmented Reality Viewer</a></p>
   <!-- <p><a href="https://developer.apple.com/augmented-reality/quick-look/">More detail on Augmented Reality</a></p> -->
-<!-- </section> -->
+</section>
 
 
 <!-- <section>
@@ -132,23 +130,46 @@
 
 
 <section><h2  id="Display">Display</h2>
+<p>This model demonstrates three rotational-to-linear conversions:</p>
 
+<ul>
+  <li>Top: Classic slider-crank with visible connecting rod</li>
+  <li>Middle: Scotch yoke showing pin and slot interaction</li>
+  <li>Bottom: Quick return mechanism demonstrating asymmetric motion</li>
+</ul>
+  <p>The display runs at approximately 100 RPM.</p>
 
   <figure>
-  	<img src="img/universal-joint/universal-joint-display.jpg" width="100%" alt="Universal Joint display in Mechanical Library">
-  	<figcaption>
-      Universal Joint display in Mechanical Library
-      <footer><small>Source: mechanical-library.org</a></small></footer>
-    </figcaption>
+    <img src="img/rotational-to-linear/rotational-to-linear-oblique.jpg" alt="three Rotational to Linear mechanisms">
+  <figcaption>
+  
+    Three Rotational to Linear mechanisms. From top to bottom, Slider Crank, Scotch Yoke, and Whitworth Quick Return mechanisms.
+  
+    <footer><small>Source:mechanical-library.org</a></small></footer>
+  </figcaption>
   </figure>
+  
+  
+  
+  <figure>
+  
+        <img src="img/rotational-to-linear/rotational-to-linear-face.jpg" alt="Three Rotational to Linear mechanisms">
+    
+  <figcaption>
+    
+    Three Rotational to Linear mechanisms. From top to bottom, Slider Crank, Scotch Yoke, and Whitworth Quick Return mechanisms.
+   
+        <footer><small>Source:mechanical-library.org</a></small></footer>
+      </figcaption>
+    </figure>
 
 
-<video autoplay muted loop playsinline class="TitlePanel-video" width="100%" alt="Video of Universal Joint display in Mechanical Library">
-  <source src="img/universal-joint/universal-joint-display.mp4" type="video/mp4">
-</video>
+<figure>
+  <img src="img/rotational-to-linear/rotational-to-linear-working-model.jpeg" alt="Working model of rotational to linear display model">
 <figcaption>
-  Video of Universal Joint display in Mechanical Library
-  <footer><small>Source: mechanical-library.org</a></small></footer>
+Working model of rotational to linear display model
+
+<footer><small>Source: mechanical-library.org</small></footer>
 </figcaption>
 </figure>
 
@@ -161,124 +182,136 @@
 <section><h2  id="Images">Images</h2>
   
 <figure>
-
-  <img src="img/universal-joint/u_joint_animation-single.jpg" alt="Single Universal Joint">
-
+  <img src="img/rotational-to-linear/slider-crank.jpg" alt="3D model of Slider Crank mechanism">
 <figcaption>
-
-Single Universal Joint
-
-  <footer><small>Source:mechanical-library.org</a></small></footer>
+  3D model of Slider Crank mechanism
+<footer><small>Source: mechanical-library.org</small></footer>
 </figcaption>
+</figure>
+  
+<figure>
+  <img src="img/rotational-to-linear/scotch-yoke.jpg" alt="3D model of Scotch Yoke mechanism">
+<figcaption>
+  3D model of Scotch Yoke mechanism
+<footer><small>Source: mechanical-library.org</small></footer>
+</figcaption>
+</figure>
+  
+  
+<figure>
+  <img src="img/rotational-to-linear/quick-return.jpg" alt="3D model of Quick Return mechanism">
+<figcaption>
+  3D model of Quick Return mechanism
+<footer><small>Source: mechanical-library.org</small></footer>
+</figcaption>
+</figure>
+  
+  
+<figure>
+      <img src="https://technologystudent.com/cams/crank1a.gif" alt="Crank and Slider mechanism diagram">
+<figcaption>
+  Crank and Slider mechanism diagram
+
+  <footer><small>Source: <a href="https://technologystudent.com/cams/crkslid1.htm">V. Ryan, technologystudent.com</a></small></footer>
+  </figcaption>
+</figure>
+  
+  
+<figure>
+      <img src="https://technologystudent.com/cams/quickr1.gif" alt="Quick return mechanism diagram">
+<figcaption>
+  Quick return mechanism diagram
+  <footer><small>Source: <a href="https://technologystudent.com/cams/crank1.htm">V. Ryan, technologystudent.com</a></small></footer>
+  </figcaption>
+</figure>
+
+
+  
+<figure>
+      <img src="https://technologystudent.com/cams/crankup1a.gif" alt="Shaper machine showing a conceptual Quick return mechanism">
+<figcaption>
+  Shaper machine showing a conceptual Quick return mechanism
+  <footer><small>Source: <a href="https://technologystudent.com/cams/crank1.htm">V. Ryan, technologystudent.com</a></small></footer>
+  </figcaption>
 </figure>
 
 
 
+  
 <figure>
-
-      <img src="img/universal-joint/u_joint_animation-double.jpg" alt="Double Universal Joint">
-  
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Pump_Jack.jpg" alt="Industrial Universal Joint">
 <figcaption>
-  
-    Double Universal Joint
- 
-      <footer><small>Source:mechanical-library.org</a></small></footer>
-    </figcaption>
-  </figure>
+  Slider cranks are visible drivings an oil pumpjack.
 
+  <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Pump_Jack.jpg">Sanjay Acharya, Wikipedia</a></small></footer>
+  </figcaption>
+</figure>
   
 
 <figure>
-      <img src="img/universal-joint/mechanical-library.org_universal_joint_transparent_BG.png" alt="Industrial Universal Joint">
-</a>    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Shaper_with_boring_bar.jpg" alt="Shaper Machine">
 <figcaption>
-<a href="img/universal-joint/UniversalJoint.usdz">
-  Industrial Universal Joint
-
-    <footer><small>Source:mechanical-library.org</a></small></footer>
+  <a href="https://en.wikipedia.org/wiki/Shaper">Shapers</a> were very important early Industrial Revolution machines
+  <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Shaper_with_boring_bar.jpg">Three-quarter-ten, Wikipedia</a></small></footer>
   </figcaption>
 </figure>
 
   
   <figure>
-  	<img src="img/universal-joint/Universal_joint.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+  	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Shaper.png" alt="Diagram showing motion of shaper using a quick return mechanism">
   	<figcaption>
-  		The "hub" or "spider" (green) has 4 spokes that fit into holes of the two "yokes" (red), enabling it to rotate in both directions. 
-      <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Universal_joint_transparant.gif">Wikipedia</a></small></footer>
+  		Diagram showing motion of shaper using a quick return mechanism
+      <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Shaper.png">Duk, Wikipedia</a></small></footer>
     </figcaption>
   </figure>
 
 
   <figure>
-  	<img src="img/universal-joint/u-joint-spider.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+  	<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Quick_Return_Mechanism_1.gif" alt="Diagram of a quick return mechanism">
   	<figcaption>
-      In real life use, the ends of the spokes are covered by caps holding cylinder “needle” bearings to reduce friction.
-      <footer><small>Source: mechanical-library.org</small></footer>
-    </figcaption>
-  </figure>
-
-
-  <figure>
-  	<img src="img/universal-joint/Cardan-joint_DIN808_type-E_topview_animated.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
-  	<figcaption>
-  		Universal joints are typically designed to protect the internal parts from dirt.
-      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/c/c0/Cardan-joint_DIN808_type-E_topview_animated.gif">Wikipedia</a></small></footer>
+  		Diagram of a quick return mechanism
+      <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/File:Quick_Return_Mechanism_1.gif">Arglin Kampling, Wikipedia</a></small></footer>
     </figcaption>
   </figure>
 
   <figure>
-  	<img src="img/universal-joint/schoolbus-u-joint.jpg" alt="a universal joint under a school bus">
+  	<img src="img/rotational-to-linear/clark-014-scotch-yoke.jpg" alt="Clark Collection Slider Yoke demonstration model">
   	<figcaption>
-  		A universal joint can be seen under school buses or trucks.
-      <footer><small>Source: mechanical-library.org</small></footer>
-  	</figcaption>
-  </figure>
-
-
-  <figure>
-  	<img src="img/universal-joint/Universal_joint_3slash8_inches.jpg" alt="Universal Joints in a socket set attachment.">
-  	<figcaption>
-  		Universal Joints can also be seen in tools, like this socket set attachment.
-      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/a/a0/Universal_joint_3slash8_inches.jpg">Wikipedia</a></small></footer>
-  	</figcaption>
+  		Clark Collection Slider Yoke demonstration model 14
+      <footer><small>Source: <a href="https://wayback.archive-it.org/2566/20180418125524/http://kmoddl.library.cornell.edu/model.php?m=446">Clark Collection, Boston Museum of Science, Cornell KMODDL, </a></small></footer>
+    </figcaption>
   </figure>
 
   <figure>
-  	<img src="img/universal-joint/gobilda_universal_joint_4003.jpeg" alt="a universal joint from Gobilda">
+  	<img src="img/rotational-to-linear/clark-021-scotch-yoke.jpg" alt="Clark Collection Slider Yoke demonstration model">
   	<figcaption>
-  		<a href="https://www.gobilda.com/4003-series-set-screw-universal-joint-6mm-d-bore-to-6mm-d-bore/">Gobila 4003 small universal joint</a>
-      <footer><small>Source: mechanical-library.org</small></footer>
-  	</figcaption>
-  </figure>
-
-
-
-  <figure>
-  	<img src="img/universal-joint/Saviem_SM7_pic4_-_Cardan.jpg" alt="a universal joint in a train coupling">
-  	<figcaption>
-  		Universal Joints are commonly used in tough industrial environments.
-      <footer><small>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Saviem_SM7_pic4_-_Cardan.jpg">Wikipedia</a></small></footer>
-  	</figcaption>
+  		Clark Collection Slider Yoke demonstration model 14
+      <footer><small>Source: <a href="https://wayback.archive-it.org/2566/20180418125524/http://kmoddl.library.cornell.edu/model.php?m=446">Clark Collection, Boston Museum of Science, Cornell KMODDL, </a></small></footer>
+    </figcaption>
   </figure>
 
   <figure>
-  	<img src="img/universal-joint/507-50-51-universaljoint.png" alt="diagram of single and double universal joint">
+  	<img src="img/rotational-to-linear/clark-147-oscillating-cylinder-engine.jpg" alt="Clark Collection Model: 147 Oscillating Cylinder Engine">
   	<figcaption>
-  		“50 and 51. Two kinds of universal joints.”
-
-      <footer><small>Source: Page 24, 507 Mechanical Movements by Henry T. Brown </small></footer>
-  	</figcaption>
+  		Clark Collection Model: 147 Oscillating Cylinder Engine
+      <footer><small>Source: <a href="https://wayback.archive-it.org/2566/20180418130039/http://kmoddl.library.cornell.edu/model.php?m=535">Clark Collection, Boston Museum of Science, Cornell KMODDL, </a></small></footer>
+    </figcaption>
   </figure>
 
   <figure>
-  	<img src="img/universal-joint/KMODDL_Universal_Joint_Clark_Collection.jpg" alt="photograph of single and double universal joint">
+  	<img src="img/rotational-to-linear/Reuleaux-Slider-Crank-Linkage-With-Variable-Angle-Slider.jpg" alt="Slider-Crank Linkage With Variable Angle Slider">
   	<figcaption>
-  		“Singe and Double Universal Joint”
+  		Slider-Crank Linkage With Variable Angle Slider
 
-      <footer><small>Source: Cornell University KMODDL of Clark Collection, Boston Museum of science</small></footer>
+      <footer><small>Source: <a href="https://digital.library.cornell.edu/catalog/ss:372527">Cornell University KMODDL Reuleaux Kinematic Mechanisms Collection</a></small></footer>
   	</figcaption>
-  </figure>
 
+  <figure>
+  	<img src="img/rotational-to-linear/Reuleaux-Slider-Crank-Linkage-With-Eccentric-Slider-Mechanism.jpg" alt="Eccentric  Slider Mechanism">
+  	<figcaption>
+  		Eccentric-Slider Mechanism
+      <footer><small>Source: <a href="https://digital.library.cornell.edu/catalog/ss:372549">Cornell University KMODDL Reuleaux Kinematic Mechanisms Collection</a></small></footer>
+  	</figcaption>
 
 </section>
       
@@ -287,44 +320,98 @@ Single Universal Joint
 <section><h2  id="Videos">Videos</h2>
 
   <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/LCMZz6YhbOQ?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <iframe loading="lazy" src="img/rotational-to-linear/scotch_yoke_manual.mp4" class="youTubeIframe" allowfullscreen>  </iframe>
     <figcaption>
-  		This video shows the parts of a universal joint, including the needle bearings
+  		A Scotch yoke animation, showing the sinusoidal (sine wave) of the back and forth motion.
+      <footer><small>Source: mechanical-library.org</small></footer>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/P885nbwKAx0?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <figcaption>
+  		Converting Rotational Motion into Linear Motion - Mechanical Principles
+    </figcaption>
+  </figure>
+
+  <h3>Scotch Yoke Mechanism</h3>
+
+  <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/ebgs6qfPTKY?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <figcaption>
+  		Scotch Yoke Mechanism built as a Motion Study in Fusion 360.   
     </figcaption>
   </figure>
 
 
   <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/Tjn5BAqSb2Q?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/YCC-UMIWs7A?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
     <figcaption>
-  		General explanation of a universal joint and demonstration of wobble of output shaft
+  		Real life Scotch Yoke mechanism build
     </figcaption>
   </figure>
 
+  
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/2j-lGD4FDNI?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Wooden Scotch Yoke Demonstration
+      </figcaption>
+    </figure>
+  
 
-  <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/FTiJAdJjsqA?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
-    <figcaption>
-  		Commercial video that shows Universal Joint in use and compares to Constant Velocity joint
-    </figcaption>
-  </figure>
+    <h3>Slider Crank Mechanism</h3>
 
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/cxlFDeZKEk0?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Slider-Crank animation
+      </figcaption>
+    </figure>
 
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/ytxSVmbbw_Y?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Kineamatics lecture on the Slider-Crank mechanism
+      </figcaption>
+    </figure>
 
-  <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/ILTjM7IDTdc?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
-    <figcaption>
-  		Video of young mechanics showing real life universal joint repair.
-    </figcaption>
-  </figure>
+    <h3>Whitworth Quick-Return Mechanism</h3>
 
-  <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/cydmR0lX2t8?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
-    <figcaption>
-  		Animation showing a double Cardan Joint
-    </figcaption>
-  </figure>
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/xb3UsDP4l_w?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Whitworth Quick-Return Mechanism
+      </figcaption>
+    </figure>
 
+  
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/3kE6KgRFMQc?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption> Whitworth Mechanism - 6 Variations of movement
+      </figcaption>
+    </figure>
+
+  
+  
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/1u4stviMxJw?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Kineamatics Explanation of Quick Return Mechanism
+      </figcaption>
+    </figure>
+
+  
+  
+    <figure>
+      <iframe loading="lazy" src="https://www.youtube.com/embed/rKIoP67_MAI?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+      <figcaption>
+        Quick Return Mechanism Animation
+      </figcaption>
+    </figure>
+
+  
+  
 </section>
 
 
@@ -332,165 +419,220 @@ Single Universal Joint
 <section><h2 id="3D_Printing">3D Printing</h2>
   
   <figure>
-    <img src="img/universal-joint/large_display_Miniature.jpg" alt="a universal joint lego piece">
+    <img src="https://media.printables.com/media/prints/319576/images/7897393_efba46a9-63f0-4101-bb60-d26ac513132f_16dee82c-5a9d-490c-af85-8edd6af8e791/thumbs/inside/1280x960/webp/yoke2.webp" alt=" Simple press-fit scotch yoke">
     <figcaption>
-      Lego Technic Compatible Inverse Universal Joint with 2L Axle 
-      <footer><small>Source: <a href="https://www.thingiverse.com/thing:5102079">thingverse.com</a></small></footer>
+      Simple press-fit scotch yoke
+      <footer><small>Source: <a href="https://www.printables.com/model/319576-scotch-yoke/files">@Sidpatchy on printables.com</a></small></footer>
     </figcaption>
   </figure>
-
-
+  
   <figure>
-    <img src="img/universal-joint/IMG_1246_display_large.JPG" alt="3D Print of Universal Joint part">
+    <img src="https://cdn.thingiverse.com/renders/5a/a4/f0/b6/98/d0e224adffe20fcd0dcc4e4342e07e12_display_large.JPG" alt=" Simple press-fit scotch yoke">
     <figcaption>
-      3D Print of Universal Joint part
-      <footer><small>Source: <a href="https://www.thingiverse.com/thing:264017">thingverse.com</a></small></footer>
+      Scotch Yoke Fidget
+      <footer><small>Source: <a href="https://www.thingiverse.com/thing:2310888">@jamcultur on thingiverse.com</a></small></footer>
     </figcaption>
   </figure>
-
-
-  <figure>
-    <img src="img/universal-joint/03-10-2020_17-10-27.jpg" alt="3D Print of Universal Joint part">
-    <figcaption>
-      Universal Joint Demonstrator
-      <footer><small>Source: <a href="https://cults3d.com/en/3d-model/various/universal-joint-demonstrator">cults3d.com</a></small></footer>
-    </figcaption>
-  </figure>
-
-
 
   
-
   <figure>
-    <img src="img/universal-joint/turntable1-9.jpg" alt="3D Print of Universal Joint">
+    <img src="https://media.printables.com/media/prints/357815/images/3031174_d0e32569-88c8-41df-b3bd-eab05cbd34a2/thumbs/inside/1280x960/jpg/image00a.webp" alt="Simple press-fit scotch yoke">
     <figcaption>
-      3D Print of Cardan Joint
-      <footer><small>Source: <a href="https://www.turbosquid.com/3d-models/universal-joint-3d-model/1134139">turbosquid.com</a></small></footer>
+      3D Printed Scotch Yoke Mechanism with a 6VDC gear motor
+      <footer><small>Source: <a href="https://www.printables.com/model/357815-a-simple-3d-printed-scotch-yoke-mechanism">@gzumwalt_494620 on printables.com</a></small></footer>
     </figcaption>
   </figure>
+
+
+
+  <figure>
+    <img src="https://images.cults3d.com/P7VNLTQVUAu16JJGEU-0ac2tnlw=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/20586650/illustration-file/b265593d-e611-4cab-a961-7e2f48ac065f/Scotch-Yoke-Exploded-Icon-Copy.jpg" alt=" Scotch Yoke Mechanism">
+    <figcaption>
+      Scotch Yoke Mechanism
+      <footer><small>Source: <a href="https://cults3d.com/en/3d-model/various/scotch-yoke-mechanism-3d_design_space">3D_Design_Space on cults3d.com</a></small></footer>
+    </figcaption>
+  </figure>
+
+  
+    
+  
+    <figure>
+      <img src="https://cdn.thingiverse.com/renders/5c/72/cd/87/95/20160103_124329_display_large.jpg" alt="3D Print of Slider-crank linkage">
+      <figcaption>
+        Snap fit Slider crank mechanism
+        <footer><small>Source: <a href="https://www.thingiverse.com/thing:1241789">orafaz on thingiverse.com</a></small></footer>
+      </figcaption>
+    </figure>
+  
+  
+  
+    <figure>
+      <img src="https://images.cults3d.com/tu5FUndgJ-kIGpcF4t27DBnqvYc=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/14117166/illustration-file/4e326112-74fb-49df-9c3d-f0f355e67ad4/269701736_643067490347366_5492105095996462969_n.jpg" alt="3D Print of Slider-crank linkage" style="transform: rotate(90deg);">
+      <figcaption>
+        Slider-crank linkage
+        <footer><small>Source: <a href="https://cults3d.com/en/3d-model/gadget/slider-crank-linkage">kazimirwp7 on cults3d.com</a></small></footer>
+      </figcaption>
+    </figure>
+  
+  
+    
+  
+    <figure>
+      <img src="https://media.printables.com/media/prints/283697/images/2512495_84836cea-8e44-486d-a829-c01853246f53/thumbs/inside/1280x960/jpg/306560082_1316022905605114_6524779555141198984_n.webp" alt="3D Print of Slider-crank linkage">
+      <figcaption>
+        Slider-Crank Linkage (Cookie Clicker irl cheat code)
+        <footer><small>Source: <a href="https://www.printables.com/model/283697-slider-crank-linkage-cookie-clicker-irl-cheat-code">rackjabbit_ on printables.com</a></small></footer>
+      </figcaption>
+    </figure>
+  
+    
+  
+    
+  
+    <figure>
+      <img src="https://media.printables.com/media/prints/864144/images/6634982_93cbe49a-b8cf-4209-ad20-d6ddb0c2089d_2a3be5bb-f74a-402e-a9b0-ca0f317a2c00/thumbs/inside/1280x960/jpg/a1.webp">
+      <figcaption>
+        Slider crank mechanism
+        <footer><small>Source: <a href="https://www.printables.com/model/864144-slider-crank-mechanism">MarcinPaska on printables.com</a></small></footer>
+      </figcaption>
+    </figure>
+  
+    
+  
+    <figure>
+      <img src="https://images.cults3d.com/VEujCLNJLDO6Q1fCSQQvebgituM=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/13949767/illustration-file/9d6c5ffe-adc2-4121-b2c5-b3e897a0b281/IMG_1556.JPG" alt="Whitworth quick return mechanism">
+      <figcaption>
+        Whitworth quick return mechanism
+        <footer><small>Source: <a href="https://cults3d.com/en/3d-model/various/whitworth-quick-return-mechanism">AjaxJones on cults3d.com</a></small></footer>
+      </figcaption>
+    </figure>
+
+  
+    <figure>
+      <img src="https://cdn.thingiverse.com/renders/55/d1/2e/80/8c/P1130305_display_large.jpg" alt=" Quick return mechanism">
+      <figcaption>
+        Quick return mechanism
+        <footer><small>Source: <a href="https://www.thingiverse.com/thing:335797">mgg942 on thingverse.com</a></small></footer>
+      </figcaption>
+    </figure>
+  
+  
 </section>
+
+
+
 
 
 
 
 <section><h2  id="Lego">Mechanism in Legos</h2>
-    Lego makes a Universal Joint part
+ 
+  
+
+  <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/jmt_-cG1xeo?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <figcaption>
+  		Lego Slider Crank and Scotch Yoke mechanisms
+    </figcaption>
+  </figure>
+
+
+  <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/_TbsDhuxjK8?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen>  </iframe>
+    <figcaption>
+  		Lego Slider Quick Return mechanism
+    </figcaption>
+  </figure>
   
     <figure>
-      <img src="img/universal-joint/9244c01.png" alt="a universal joint 'spider', with one cap off, showing needle bearings">
+      <img src="https://images.squarespace-cdn.com/content/v1/51967abae4b0fe8d0161031f/d9e03684-75c0-43cb-a32c-2b452378460e/Slider+crank+mechansim.gif?format=2500w" alt="Lego slider crank">
       <figcaption>
-        Lego Technic, Universal Joint 4L Item No: 9244c01
-        <footer><small>Source: <a href="https://img.bricklink.com/ItemImage/PN/9/9244c01.png">BrickLink.com</a></small></footer>
+        Slider crank mechanism by bricksngears
+        <footer><small>Source: <a href="https://bricknerd.com/home/the-five-core-mechanisms-of-great-ball-contraptions-7-24-24">bricknerd.com</a></small></footer>
       </figcaption>
     </figure>
+  
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/9iKgPJnEyRM?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+  		Slider Crank Linkage with Steps
+    </figcaption>
+  </figure>
 
    <figure>
-    <iframe loading="lazy" src="https://www.youtube.com/embed/_aldR1G6CcI?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/jwObAgeHezY?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
     <figcaption>
-  		Video of 5 unusual lego universal joints
+  		Slider-Crank Linkage - Mechanical Principles - Lego Technic
+    </figcaption>
+  </figure>
+
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/lmtEUUY2NJk?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+  		Lego technic studless scotch yoke
+    </figcaption>
+  </figure>
+
+
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/aSWhaf2mOhI?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+  		LEGO MOC - Scotch Yoke Mechanism
+    </figcaption>
+  </figure>
+
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/ZltHDSObmNQ?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+  		Quick Return Mechanism 
+    </figcaption>
+  </figure>
+
+
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/GYVD9SoQz38?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+      Quick Return Mechanism in LEGO Technic
+    </figcaption>
+  </figure>
+
+   <figure>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/_TbsDhuxjK8?autoplay=0&mute=1&showinfo=1&modestbranding=1&controls=0" class="youTubeIframe" allowfullscreen >  </iframe>
+    <figcaption>
+      Drag Link Quick Return Mechanism
     </figcaption>
   </figure>
 
 
 </section>
 
-<section><h2 id="Weird_Fact">Weird Fact</h2>
-  <p>In antiquity, it was noticed that the math between the two joints looks similar as the seasonal variation of day length across the year.  And it is! The earth's North/South axis is angled 23 degrees from the axis of its orbit around the Sun.
-    </p>
-
-    <figure>
-      <img src="img/universal-joint/tilt.jpg" alt="comparing the earth's rotation to the orbit of the sun">
-      <figcaption>
-        Comparing the earth's rotation to the orbit of the sun
-        <footer><small>Source: <a href="https://faculty.kutztown.edu/courtney/blackboard/physical/21seasons/seasons.html">Dr. Richard S. Courtney, Kutztown University Department of Geography</a></small></footer>
-      </figcaption>
-    </figure>
 
 
-    <figure>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/EquationofTimeandAnalemma.gif" alt="a universal joint 'spider', with one cap off, showing needle bearings">
-      <figcaption>
-        Seasonal variation of day length
-        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Equation_of_time#Graphical_representation">wikipedia.org</a></small></footer>
-      </figcaption>
-    </figure>
-  
-  </section>
+<!-- <section><h2 id="Weird_Fact">Weird Fact</h2>
+    
+  </section> -->
 
 
-<!-- 
 <section><h2 id="History">History</h2>
   <p>
-    The universal joint idea has been around since antiquity, and been discovered or documented multiple times, for example by Gerolamo Cardano, in the 16th century and Robert Hooke, in the 17th century.
-    </p>
-<p><a href="https://wayback.archive-it.org/2566/20180418140920/http://kmoddl.library.cornell.edu/tutorials/09/">Historical notes on P1 - Hook's joint/universal joint/Cardan joint
-</a>
-by Daina Taimina
-</p>
+   The conversion of rotary to linear motion was crucial to the Industrial Revolution. Early steam engines used beam engines before the development of the slider-crank. The Scotch yoke emerged in the 19th century for applications requiring smoother motion. Quick return mechanisms were developed for machine tools to improve efficiency.    </p>
 
-  <figure>
+   <p>James Watt's parallel motion mechanism (1784) was an early attempt at converting rotary to linear motion while maintaining a straight line path.</p>
+
+   <p><a href="https://www.whitworthsociety.org/history.php?page=2">History of Sir Joseph Whitworth</a></p>
+   <!-- <figure>
   	<img src="img/universal-joint/L-gelenk2.png" alt="Universal Joint from Lexikon der Gesamten Technik (dictionary of technology) from 1904 by Otto Lueger">
   	<figcaption>
   		Design for simple Universal Joint from Lexikon der Gesamten Technik (dictionary of technology) from 1904 by Otto Lueger.
       <footer><small>Source: <a href="https://commons.wikimedia.org/wiki/Cardan_joints#/media/File:L-gelenk2.png
         ">Wikipedia</a></small></footer>
   	</figcaption>
-  </figure>
+  </figure> -->
 
-</section> -->
+</section>
 
-<!-- <section><h2 id="Math">Math
-  </h2>
-  <p>
-The rotational speed of the follower shaft will vary based on the angle. This can be calculated.
-    </p>
+<!-- <section><h2 id="Math">Math  </h2>
 
-    <figure>
-      <img src="img/universal-joint/UJoint1.png" alt="Output shaft speed relative to input shaft speed, at different angles between shafts">
-      <figcaption>
-        Output shaft speed relative to input shaft speed, at different angles between shafts 
-        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
-          ">Wikipedia</a></small></footer>
-      </figcaption>
-    </figure>
-
-
-
-    <figure>
-      <img src="img/universal-joint/UJoint_3D.png" alt="Diagram showing axis of rotation of both shafts">
-      <figcaption>
-        Diagram showing axis of rotation of both shafts
-        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
-          ">Wikipedia</a></small></footer>
-      </figcaption>
-    </figure>
-
-
-    <figure>
-      <img src="img/universal-joint/UJoint.png" alt="Chart of output shaft relative to input shaft">
-      <figcaption>
-        Diagram showing axis of rotation of both shafts
-        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
-          ">Wikipedia</a></small></footer>
-      </figcaption>
-    </figure>
-
-    
-
-  
-    <figure>
-      <img src="img/universal-joint/73db9fc5ed10a8c72c771594e93133f37118cd62.svg" alt="Equation of motion" style="background-color: white;">
-      <figcaption>
-        Output velocity (ω2) = input velocity (ω2)*  (cosine (β) / (1- sin²(β) * cos()² γ1))
-        ω2 = Output velocity
-        ω2 = Input velocity 
-        β = Angle between planes of rotation, with zero being parallel 
-        γ1 = the angle of rotation for axle 1
-        <footer><small>Source: <a href="https://en.wikipedia.org/wiki/Universal_joint#Equation_of_motion
-          ">Wikipedia</a></small></footer>
-      </figcaption>
-    </figure>
-    
     
 </section> -->
 
@@ -531,11 +673,25 @@ The rotational speed of the follower shaft will vary based on the angle. This ca
 
   </section> -->
 
-<!-- <section><h2 id="Research">Research</h2>
+<section><h2 id="Research">Research</h2>
   <ul>
-    <li><a href="http://wayback.archive-it.org/2566/20180418125535/http://kmoddl.library.cornell.edu/model.php?m=449">Universal Joint on Cornell University KMODDL</a> (from Clark Collection)</li>
+  <li><a href="https://en.wikipedia.org/wiki/Scotch_yoke">Scotch yoke</a></li>
+  <li><a href="https://wayback.archive-it.org/2566/20180418125524/http://kmoddl.library.cornell.edu/model.php?m=446">Scotch Yoke -Clark model # 14 </a> (from Clark Collection in Cornell University KMODDL)</li>
+  <li><a href="https://wayback.archive-it.org/2566/20180418125550/http://kmoddl.library.cornell.edu/model.php?m=453">Scotch Yoke -Clark model # 21 </a> (from Clark Collection in Cornell University KMODDL)</li>
+
+  <li><a href="https://en.wikipedia.org/wiki/Slider-crank_linkage">Slider-crank linkage</a></li>
+  <li><a href="https://wayback.archive-it.org/2566/20180418130039/http://kmoddl.library.cornell.edu/model.php?m=535">Oscillating Cylinder Engine -Clark model # 147  </a> (from Clark Collection in Cornell University KMODDL)</li>
+
+
+  <li><a href="https://en.wikipedia.org/wiki/Quick_return_mechanism">Quick return mechanism</a></li>
+  <li><a href="https://www.whitworthsociety.org/history.php?page=2">History of Sir Joseph Whitworth</a></li>
+  <li><a href="https://www.youtube.com/@thang010146/search?query=slider%20crank">Excellent collection of slider crank videos</a></li>
+  <li><a href="https://ecommons.cornell.edu/server/api/core/bitstreams/f125588b-3bb0-4394-a3c9-4a149c20aa46/content">Slider Crank section of <i>Kinematics of Machines</i> by Durley, Richard John (1907)</a></li>
+  <li><a href="https://technologystudent.com/cams/crkslid1.htm">CRANK AND SLIDER MECHANISM on https://technologystudent.com</a></li>
+  <li><a href="https://technologystudent.com/cams/crank1.htm">QUICK RETURN CRANK MECHANISM on https://technologystudent.com</a></li>
+
   </ul>  
-</section> -->
+</section>
 
 <!-- <section><h2 id="Related Mechanisms">Related Mechanisms</h2>
   <ul>
@@ -547,3 +703,5 @@ The rotational speed of the follower shaft will vary based on the angle. This ca
 </div>
 </body>
 </html>
+
+
