@@ -274,9 +274,6 @@ dfn {
 }
 
 /*--------------------------------------------------------- */
-.jumpTo b {
-  display: block;
-}
 
 .jumpTo a {
   word-break: keep-all;
