@@ -53,21 +53,30 @@
           <h2>Intro</h2>
           <p>
             in the 1920's, W. M. Clark designed and made two exhibits of mechanical movements which were displayed in a number of museums and the 1934 Chicago
-            World's Fair. One exhibit is on display today in the Museum of Science, Boston. This exhibit inspired the
-            <a href="mechanical-library.org">Mechanical Library</a>. This historical research aims to honor the excellent work that is sadly not readily
-            available on the internet. I hope it continues to inspire new generations.  <i
-            >This information and files are presented for the convenience of future readers, no copyright claim is implied.</i
-          >
+            World's Fair. One exhibit is on display today in the Museum of Science, Boston, which inspired the
+            <a href="mechanical-library.org">Mechanical Library</a> project. Sadly, it was not readily available online.
           </p>
+          <p>This research aims to honor the creative work and to inspire new generations. The various historical photos and news clippings below depict interesting people and a fascinating time of optimism for the future, during two of the darkest periods in American history, the Civil War and Great Depression. </p>
         </section>
 
         <section id="Gallery">
           <h2>Gallery</h2>
-          <p>This collects, for the first time, the photos of the Boston Museum of Science Clark collection, by way of Cornell University KMODDL<a href="#17"><sup>17</sup></a>, with photos from Newark Museum publications<a href="#16"><sup>16</sup></a>.
-         Click each photo to see original exhibit text from Newark Museum<a href="#8"><sup>8</sup></a>.
-         <button onclick="toggleFullScreen()">Go Fullscreen!</button>
+          <p>This collects, for the first time, the photos of the Boston Museum of Science Clark collection, by way of Cornell University KMODDL<a href="#17"><sup>17</sup></a>, with photos from Newark Museum publications<a href="#16"><sup>16</sup></a>. <i
+            >This information and files are collected here for the convenience of future readers, no copyright claim is implied.</i
+          >
+          </p>
+          <p>
+            Click each photo to see original exhibit text from Newark Museum<a href="#8"><sup>8</sup></a>.
+           <button id="fullscreenbutton" onclick="toggleFullScreen()">Go Fullscreen!</button>
+          
+          </p>
+         <style>
+
+@media screen and (max-width: 510px) {
+  #fullscreenbutton{display: none;}  /* fullscreen doesn't work on iphone? */
+}
+         </style>
         
-        </p>
           
         
 
@@ -1788,13 +1797,7 @@ document.exitFullscreen();
 
         </section>
 
-        <section id="Intro">
-          <h2>Intro</h2>
-          <p>
-            in the 1920's, W. M. Clark designed and made two exhibits of mechanical movements which were displayed in a number of museums and the 1934 Chicago
-            World's Fair. One exhibit is on display today in the Museum of Science, Boston. This exhibit
-          </p>
-        </section>
+
 
         <section id="History">
           <h2>History</h2>
