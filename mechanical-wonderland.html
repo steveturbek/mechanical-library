@@ -65,7 +65,7 @@
             >This information and files are collected here for the convenience of future readers, no copyright claim is implied.</i
           >
           </p>
-          <p>
+          <p id="galleryinstructions">
             Click each photo to see original exhibit text from Newark Museum<a href="#8"><sup>8</sup></a>.
            <button id="fullscreenbutton" onclick="toggleFullScreen()">Go Fullscreen!</button>
           
@@ -1677,8 +1677,8 @@ to 89 WAS Coal breaker in Newark text
 
   #mechanical-wonderland-exhibit {
     padding: 0;
-    /* background-color: #96978f; */
-    overflow-y: scroll;
+    background-color: #fff;
+    /* overflow-y: scroll; */    
   }
 
   #mechanical-wonderland-exhibit h3 {
@@ -1691,16 +1691,15 @@ margin-top: 20px;
   #mechanical-wonderland-exhibit section {
   padding: 0;
   margin: 0;
+  
   }
   
 
   #mechanical-wonderland-exhibit section div {
-    /* display: flexbox; */
-    /* background-color: blue; */
-    
     display: grid;
     grid-template-columns: repeat(4, 25%);
     width: 100%;
+    
   }
   
   #mechanical-wonderland-exhibit section div div {
@@ -1731,6 +1730,63 @@ margin-top: 20px;
   #mechanical-wonderland-exhibit section > div div.expanded img {
     display: none;
   }
+
+
+
+      /* Print-optimized CSS */
+@media print {
+  /* Remove unnecessary elements */
+  nav, footer, button, .no-print, #galleryinstructions, .jumpTo {
+    display: none !important;
+  }
+
+  /* Reset page margins and background */
+  @page {
+    margin: 1cm;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-size: 12pt;
+  }
+
+#main {
+padding:0;
+border: 0;
+}
+
+
+#mechanical-wonderland-exhibit section div{
+display: block;
+}
+
+#mechanical-wonderland-exhibit section div div{
+display: flexbox;
+width: 100%;
+aspect-ratio: unset;
+margin-bottom: 20px;
+}
+
+#mechanical-wonderland-exhibit section div div img {
+/* grid-template-columns: repeat(2, 50%); */
+display: flex;
+width:300px;
+height:300px;
+/* aspect-ratio: 1/1; */
+}
+
+#mechanical-wonderland-exhibit section div div p {
+  display:flex;
+  overflow: visible;
+  padding-left: 20px;
+  font-size: 120%;
+} 
+
+}
+
 </style>
 
 <script>
@@ -2597,6 +2653,7 @@ Clark, William M., and Virginia Downward. <i>Mechanical Models- A Series of Work
       figure img {
         max-width: 100%;
       }
+
     </style>
 
     <script>
