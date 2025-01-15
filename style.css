@@ -64,7 +64,7 @@ li {
 a {
   color: var(--main-link-color);
   /* text-decoration: none; */
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 a:hover {
