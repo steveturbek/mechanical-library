@@ -39,25 +39,21 @@
 
       <div id="content">
         <div id="intro">
-          <h1>Mechanical Models that Move our Modern Machines</h1>
+          <img class="" style="width: 100%; margin: 0" src="img/site/homepage_diagram.jpg" />
 
-          <img class="" style="width: 100%; margin: 0" src="img/site/website-mechanical-library-concept-one-image.png" />
-
-          <p>The Mechanical Library shows the mechanisms that make our world work.</p>
-
+          <!-- <h1>Mechanical Models that Move our Modern Machines</h1> -->
+          <!-- <p>The Mechanical Library shows the mechanisms that make our world work.</p> -->
+          <br />
           <p>
-            This project is an open-source exhibit and curriculum for middle and high school students to introduce mechanical engineering. The “Wall of
-            Mechanisms” motorized physical models each have a QR code linking to online information, videos, and 3D models that explain how they work and how
-            they are used.
+            The Mechanical Library is an open-source exhibit and curriculum to introduce mechanical engineering to middle and high school student. The
+            6-foot-tall exhibit of moving mechanical models demonstrate important or interesting engineering inventions. Each mechanism has a web page that
+            explains how the mechanisms are used in real life. It has photos, videos, 3D models, & lego models.
           </p>
-          <p>
-            We hope to support STEM education by sparking curiosity in how things work.
-            <a href="#About">Learn more</a>
-          </p>
+          <p>We hope to support STEM education by sparking curiosity in how things work. <a href="#About">Learn more about the project</a></p>
 
           <p>
             <b
-              >The exhibit is currently in early development, follow <a href="https://www.instagram.com/mechanical.library">@mechanical.library</a> and
+              >The exhibit is currently in development, follow <a href="https://www.instagram.com/mechanical.library">@mechanical.library</a> and
               <a href="https://www.instagram.com/steveturbek/">@SteveTurbek</a> on Instagram
             </b>
           </p>
@@ -78,12 +74,13 @@
 
             .library-item-block,
             .library-item-preview {
-              width: 250px;
-              height: 300px;
+              width: 350px;
+              height: 400px;
               display: inline-flex;
 
               vertical-align: middle;
               background-color: var(--main-text-color);
+              margin-bottom: 20px;
             }
 
             .library-item-block:hover {
@@ -91,27 +88,36 @@
             }
 
             .library-item-preview img {
-              width: 250px;
+              width: 350px;
             }
 
             .library-item-block-caption {
-              padding-left: 10px;
-              font-size: 20px;
+              padding-left: 20px;
+              padding-top: 5px;
+              font-family: "er", Helvetica, Arial, sans-serif;
+              font-size: 28px;
+              text-align: left;
               display: block;
-              color: var(--main-bg-color);
+              /* color: var(--main-bg-color); */
               height: 40px;
               /* border: 1px solid red; */
-              padding-top: 10px;
             }
 
             .library-item-block a {
-              text-decoration: underline;
-              text-decoration-color: var(--main-bg-color);
+              /* text-decoration: underline; */
+              /* text-decoration-color: var(--main-bg-color); */
             }
             .library-item-block-caption b {
               font-weight: 900;
               font-size: 24px;
             }
+
+            .library-block-video {
+              width: 350px;
+              aspect-ratio: 1/1;
+              margin: 0;
+            }
+
             /*----------------------RESPONSIVE--------------------- */
 
             @media screen and (max-width: 510px) {
@@ -127,10 +133,10 @@
                 width: 99%;
               }
               .library-item-block-caption {
-                padding: 10px;
+                /* padding: 10px; */
                 font-size: 28px;
-                background-color: var(--main-text-color);
-                color: var(--main-bg-color);
+                /* background-color: var(--main-text-color); */
+                /* color: var(--main-bg-color); */
               }
 
               .library-item-block-caption b {
@@ -148,7 +154,7 @@
           </style>
 
           <section>
-            <h2 id="TheLibraryh2">The Library - In Progress</h2>
+            <h2 id="TheLibraryh2">The Library</h2>
             <p>Click a mechanism below to learn more, watch videos, see 3D models, make 3D prints, and build Lego models.</p>
             <!-- <p><a href="img/site/3up-display-cases.usdz"> View in-progress exhibit 3D model in Apple Quick Look AR</a></p> -->
 
@@ -158,15 +164,6 @@
                   <source src="img/gear-reduction/gear-reduction-cover.mp4" type="video/mp4" />
                 </video>
                 <div class="library-item-block-caption">Reduction Gears</div>
-              </a>
-            </div>
-
-            <div class="library-item-block">
-              <a href="belts-chains.html">
-                <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
-                  <source src="img/belt-chain/belt-chain-cover.mp4" type="video/mp4" />
-                </video>
-                <div class="library-item-block-caption">Belts & Chains</div>
               </a>
             </div>
 
@@ -183,6 +180,15 @@
             </div>
 
             <div class="library-item-block">
+              <a href="belts-chains.html">
+                <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
+                  <source src="img/belt-chain/belt-chain-cover.mp4" type="video/mp4" />
+                </video>
+                <div class="library-item-block-caption">Belts & Chains</div>
+              </a>
+            </div>
+
+            <div class="library-item-block">
               <a href="gear-right-angle.html">
                 <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
                   <source src="img/gear-right-angle/gear-right-angle-cover.mp4" type="video/mp4" />
@@ -190,6 +196,18 @@
                 <div class="library-item-block-caption">
                   <!-- <b>#000</b> -->
                   Right Angle Gears
+                </div>
+              </a>
+            </div>
+
+            <div class="library-item-block">
+              <a href="geneva-movement.html">
+                <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
+                  <source src="img/geneva-movement/geneva-animation-cover.mp4" type="video/mp4" />
+                </video>
+                <div class="library-item-block-caption">
+                  <!-- <b>#000</b> -->
+                  Geneva Movement
                 </div>
               </a>
             </div>
@@ -206,40 +224,27 @@
               </a>
             </div>
 
-            <div class="library-item-preview">
-              <div>
-                <!-- <a href="#"> -->
-                <img src="img/ratchet-pawl-stop/ratchet.png" />
+            <div class="library-item-block">
+              <a href="multiple-gearing-mechanism.html">
+                <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
+                  <source src="img/multiple-gearing-mechanism/multiple-gearing-cover.mp4" type="video/mp4" />
+                </video>
                 <div class="library-item-block-caption">
                   <!-- <b>#000</b> -->
-                  Ratchets, Pawls, & Stops
+                  Multiple Gear Drive
                 </div>
-              </div>
-              <!-- </a> -->
+              </a>
             </div>
-
-            <div class="library-item-preview">
-              <div>
-                <!-- <a href="#"> -->
-                <img src="img/geneva-movement/geneva.png" />
+            <div class="library-item-block">
+              <a href="hobsons-joint.html">
+                <video autoplay muted loop playsinline id="myVideo" class="library-block-video">
+                  <source src="img/hobsons/hobsons-cover.mp4" type="video/mp4" />
+                </video>
                 <div class="library-item-block-caption">
                   <!-- <b>#000</b> -->
-                  Geneva Movement
+                  Hobson's Joint
                 </div>
-              </div>
-              <!-- </a> -->
-            </div>
-
-            <div class="library-item-preview">
-              <div>
-                <!-- <a href="#"> -->
-                <img src="img/differential-gear/differential.png" />
-                <div class="library-item-block-caption">
-                  <!-- <b>#000</b> -->
-                  Differential gear
-                </div>
-              </div>
-              <!-- </a> -->
+              </a>
             </div>
           </section>
         </div>
@@ -310,39 +315,30 @@ display: block;
           </section>
 
           <section id="TheLibraryFuture">
-            <h2 style="width: 100%; display: inline-block">The Library - Future Elements</h2>
+            <h2 style="width: 100%; display: inline-block">Potential Phase 2 Elements</h2>
             <br clear="all" />
 
             <div id="cabinet-holder">
               <div class="cabinet">
-                <h3>Potential Future Mechanisms</h3>
                 <ol>
                   <li>Capstan Drive</li>
-                  <li>Square & Spiral Gears</li>
-                  <li>Gears trains with missing teeth</li>
-                  <li>Gearless transmission “Elbow” & Spring elbow</li>
-                  <li>Rack & Pinion</li>
+                  <li>Square & Spiral Gears, Gears trains with missing teeth</li>
                   <li>Ropes, Wires, & Pulleys</li>
                   <li>Cam & Follower (external and in groove)</li>
                   <li>
                     Cams & Eccentric Drive,<!--89-->
                     heart shape and wave wheel
                   </li>
-                  <li>Magnetic gears</li>
                   <li>Friction & Mechanical clutch</li>
                   <li>Cycloidal drive</li>
                   <li>Constant Velocity Joint</li>
                   <li>Continuously Variable Transmission</li>
-                  <li>Steam & Combustion Piston</li>
-                  <li>Crankshaft</li>
+                  <li>Steam & Combustion Piston & Crankshaft</li>
                   <li>Fluids (hydraulics) & Air pressure (pneumatics)</li>
                   <li>Springs: linear and torsion</li>
-                  <li>Muscle wire nitinol</li>
                   <li>One way bearing - roller clutch</li>
-                  <li><!-- #27 -->Multiple Gear Drive</li>
                   <li><!-- #502 -->An epicyclic train</li>
                   <li>4 Bar linkages</li>
-                  <li>Gear pump</li>
                   <li>
                     Reuleaux Triangle "positive return” cam <a href="https://507movements.com/mm_135.html">1</a>,<a
                       href="https://digital.library.cornell.edu/catalog/ss:29271991"

@@ -36,32 +36,330 @@
 
       <div id="content">
         <div class="TitlePanel">
-          <img src="img/geneva-movement/geneva.png" />
+          <video autoplay muted loop playsinline class="TitlePanel-video">
+            <source src="img/geneva-movement/geneva-animation-cover.mp4" type="video/mp4" />
+          </video>
+
           <div class="caption">
-            <b>#006</b>
+            <b>#005</b>
             Geneva Movement
           </div>
         </div>
 
-        <h2 id="underConstuction">This model is under construction</h2>
+        <section class="jumpTo">
+          <b>Jump to</b>
+          <a href="#Definition">Definition</a>
+          <a href="#Key_Facts">Key Facts</a>
+          <a href="#View_in_3D">View in 3D</a>
+          <!-- <a href="#Engineering Rules of Thumb">Engineering Rules of Thumb</a> -->
+          <!-- <a href="#Walkthrough">3D Walkthrough</a> -->
+          <a href="#Display">Mechanical Library Display</a>
+          <a href="#Images">Images</a>
+          <a href="#Videos">Videos</a>
+          <a href="#3D_Printing">3D Printing</a>
+          <a href="#Lego">Lego</a>
+          <!-- <a href="#Weird_Fact">Weird Fact</a> -->
+          <!-- <a href="#History">History</a> -->
+          <!-- <a href="#Math">Math</a> -->
+          <a href="#Library">Library</a>
+          <a href="#Research">Research</a>
+          <!-- <a href="#Related Mechanisms">Related Mechanisms</a>  -->
+        </section>
+
+        <section>
+          <h2 id="Definition">Definition</h2>
+          <p>
+            A <dfn>Geneva movement</dfn> (also called a <a href="https://en.wikipedia.org/wiki/Maltese_cross">Maltese cross</a> mechanism) is a precision
+            mechanical system that transforms continuous rotational motion into intermittent rotational motion, making it essential in devices requiring
+            periodic movement like film projectors, mechanical watches, and automated assembly machines.
+          </p>
+
+          <p>
+            The mechanism consists of a driving wheel with a pin that engages with slots in a driven wheel (the Maltese cross), creating precise, jerky
+            rotational intervals where the driven wheel remains stationary for periods before making quick, controlled movements when engaged by the driving
+            wheel's pin. periodic movement like film projectors, mechanical watches, and automated assembly machines.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="Key_Facts">Key Facts</h2>
+
+          <ul>
+            <li>They provide excellent positional accuracy with minimal backlash, making them ideal for precise indexing operations.</li>
+            <li>The system is self-locking when not being driven, preventing unwanted movement and providing stability during rest periods</li>
+            <li>
+              Engineers can adjust the ratio of motion-to-dwell time by modifying the number of slots in the driven wheel, with more slots creating shorter
+              movements and longer rest periods.
+            </li>
+
+            <li>
+              The mechanism can withstand a surprising amount of strain, and can be made extremely small, as seen in watches. However, it is often contained in
+              oil to guard against friction.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="View_in_3D">View in 3D</h2>
+
+          <script type="module" src="model-viewer.min.js"></script>
+
+          <model-viewer
+            alt="Mechanical Library Geneva Mechanism 3D model"
+            src="img/geneva-movement/geneva_mechanism.glb"
+            ar
+            shadow-intensity="1"
+            camera-controls
+            touch-action="pan-y"
+            poster="img/img/geneva-movement/geneva_mechanism.glb.png"
+            style="height: 600px"
+          ></model-viewer>
+
+          <p><a href="img/geneva-movement/geneva_mechanism.usdz" rel="ar">iPhone Augmented Reality Viewer</a></p>
+        </section>
+
+        <section>
+          <h2 id="Display">Display</h2>
+          <p>
+            This model demonstrates a central white driving wheel with a metal pin that moves a 4 slot geneva mechanism, typically known as a
+            <a href="https://en.wikipedia.org/wiki/Maltese_cross">Maltese cross</a> and an 8 slot geneva mechanism on the left. The 4 slot turns 90 degrees at
+            every rotation, the 8 slot turns 45 degrees.
+          </p>
+
+          <figure>
+            <video autoplay muted loop playsinline class="TitlePanel-video" width="100%" alt="Video of Geneva Mechanism display in Mechanical Library">
+              <source src="img/geneva-movement/geneva-display.mp4" type="video/mp4" />
+            </video>
+            <figcaption>
+              Video of Geneva Mechanism display in Mechanical Library (Note part appears to jump due to video edit)
+              <footer><small>Source: mechanical-library.org</small></footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <video autoplay muted loop playsinline class="TitlePanel-video" width="100%" alt="Animation of Geneva Mechanism display in Mechanical Library">
+              <source src="img/geneva-movement/geneva-animation.mp4" type="video/mp4" />
+            </video>
+            <figcaption>
+              Animation of Geneva Mechanism display in Mechanical Library
+              <footer><small>Source: mechanical-library.org</small></footer>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="Videos">Videos</h2>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/dDNfsde5ynw?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Geneva Mechanism or Maltese Cross both External, Internal and Variations</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/uNzXZYjsFVw?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Amazing maltese cross mechanism</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/bvoWYu0Kv5Y?t=140s&autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Mechanical Watch with Maltese Cross Stop Work</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/Le-PVXUCl0M?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>The Geneva Mechanism</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/1lyWywC_z4o?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>How to Draw a Geneva Mechanism in Fusion 360</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/CJQwezg5TGA?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Geneva Mechanism / Geneva Drive & How a Film Projector Works</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="3D_Printing">3D Printing</h2>
+
+          <figure>
+            <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/d1ff835d2c2e5f06732372c8c40007f8/large.JPG" alt="Four slotted geneva mechanism" />
+            <figcaption>
+              Four slotted geneva mechanism
+              <footer>
+                <small>Source: <a href="https://grabcad.com/library/request-four-slotted-geneva-mechanism">@mandeep singh on grabcad.com</a></small>
+              </footer>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/a1f3954bb2d1552f783fc0d7a33e3fd9/large.gif" alt="six slotted geneva mechanism" />
+            <figcaption>
+              6 slot Geneva Mechanism
+              <footer>
+                <small>Source: <a href="https://grabcad.com/library/6-slotes-geneva-mechanism">@mandeep singh grabcad.com</a></small>
+              </footer>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/4cc6c44833608b1d0cc5547c34506263/original.png" alt="8 slotted geneva mechanism" />
+            <figcaption>
+              Geneva (Maltese Cross) Indexing Wheel Assembly (8 slots)
+              <footer>
+                <small>Source: <a href="https://grabcad.com/library/geneva-maltese-cross-indexing-wheel-assembly-8-slots">@Mike Baschuk grabcad.com</a></small>
+              </footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://content.instructables.com/FME/CONN/JHIA1HRJ/FMECONNJHIA1HRJ.png" alt="Drawing Geneva Wheel and the Drive Wheel" />
+            <figcaption>
+              <a href="https://www.instructables.com/Make-Geneva-Wheels-of-Any-Size-in-a-Easier-Way/">Make Geneva Wheels of Any Size in a Easier Way</a>
+              <footer>
+                <small>Source: iGreeny on instructables.com</small>
+              </footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://content.instructables.com/FY2/MBV3/JHIA2WSA/FY2MBV3JHIA2WSA.jpg" alt="Drawing Geneva Wheel and the Drive Wheel" />
+            <figcaption>
+              <a href="https://content.instructables.com/FV1/9SS8/JHIA30UO/FV19SS8JHIA30UO.dxf">Laser Cut Flat Pack Version</a>
+              <footer>
+                <small>Source: iGreeny on instructables.com</small>
+              </footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="https://content.instructables.com/FO6/UOU2/LT8NZ10C/FO6UOU2LT8NZ10C.jpg" alt="Digital Geneva Clock" />
+            <figcaption>
+              <a href="https://www.instructables.com/Geneva-Digital-Clock/">Digital Geneva Clock</a>
+              <footer>
+                <small>Source: shiura on instructables.com</small>
+              </footer>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="Images">Images</h2>
+
+          <figure>
+            <img src="img/geneva-movement/geneva-front.jpeg" width="100%" alt="Photo of Geneva Mechanism display in Mechanical Library" />
+            <figcaption>
+              Geneva Mechanism display in Mechanical Library
+              <footer><small>Source: mechanical-library.org</small></footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/geneva-movement/geneva_mechanism.png" width="100%" alt="Rendering of Geneva Mechanism display in Mechanical Library" />
+            <figcaption>
+              Geneva Mechanism display in Mechanical Library
+              <footer><small>Source: mechanical-library.org</small></footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src=" https://mechanical-library.org/img/mechanical-wonderland/clark-cache/image_052.jpg" alt="Geneva Movement model" />
+            <figcaption>
+              Movie projector with hand crank and Geneva drive
+              <footer><small>Source: M_H.DE via wikipedia.org</small></footer>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Filmprojektor_mit_Handkurbel%2CHeimprojektor_f%C3%BCr_35mm_Stummfilm.Malteserkreuzgetriebe.JPG"
+              alt="Movie projector with hand crank and Geneva drive"
+              style="width: 100%"
+            />
+            <figcaption>
+              Movie projector with hand crank and Geneva drive
+              <footer><small>Source: M_H.DE via wikipedia.org</small></footer>
+            </figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="Lego">Mechanism in Legos</h2>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/oDD960wks90?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Geneva Drive in Lego Technic</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/81RE1CH6hx4?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>Amazing marble loader using Geneva Drive in Lego Technic</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/gJgLr2ZBjF4?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>LEGO Geneva Drive</figcaption>
+          </figure>
+
+          <figure>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/nLZDDdQ_hts?autoplay=0&mute=1" class="youTubeIframe" allowfullscreen> </iframe>
+            <figcaption>3 Ways to Build a LEGO Geneva Mechanism</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="Library">Reconstructing the Library Display</h2>
+          <p>The library display is composed of</p>
+          <ul>
+            <li><b>(1)</b> Custom cut 1/2" plywood panel (400mm x 400mm)</li>
+            <li><b>(1)</b> Custom laser cut 1/4" acrylic driving wheel</li>
+            <li><b>(1)</b> Custom laser cut 1/4" acrylic 4 slot Geneva wheel</li>
+            <li><b>(1)</b> Custom laser cut 1/4" acrylic 8 slot Geneva wheel</li>
+            <li><b>(1)</b>20mm(approx) long 6mm D shaft</li>
+            <li>
+              <b>(3)</b>
+              <a href="https://www.gobilda.com/1611-series-flanged-ball-bearing-6mm-id-x-14mm-od-5mm-thickness-2-pack/">Flanged Ball Bearing (6mm)</a>
+            </li>
+            <li><b>(1)</b>custom 3mm to 6mm d shaft adapter</li>
+            <li><b>(1)</b> G12-N20 5vDC Mini Metal Gear Motor 30RPM</li>
+
+            <li>
+              <b>(1)</b>
+              <a href="https://www.gobilda.com/1120-series-u-channel-1-hole-48mm-length/">1120 Series U-Channel (1 Hole, 48mm Length)</a>
+            </li>
+            <li><b></b>Various M4 screws</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="Research">Research</h2>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Geneva_drive">Geneva drive</a></li>
+
+            <li>
+              <a href="https://digital.library.cornell.edu/catalog/ss:29271997">Geneva Wheel Intermittent Mechanism Reuleaux Collections, Cornell KMODDL</a>
+            </li>
+
+            <li>
+              <a href="https://digital.library.cornell.edu/catalog/ss:372606">Geneva Wheel Intermittent Mechanism Reuleaux Collections, Cornell KMODDL</a>
+            </li>
+
+            <li>
+              <a href="https://wayback.archive-it.org/2566/20180418125710/http://kmoddl.library.cornell.edu/model.php?m=481"
+                >Geneva Drive model from Clark Collection in Cornell KMODDL on Archive-it.org</a
+              >
+            </li>
+            <li>
+              <a href="https://ecommons.cornell.edu/items/8ba94820-07e7-4c78-a38a-3ecd413d6f30">Geneva Drive design equations</a> Bickford, John H. 1972,
+              Industrial Press (Book), Cornell KMODDL (See
+              <a href="https://ecommons.cornell.edu/server/api/core/bitstreams/4686812a-7d97-47e4-8f46-1fb663eb41fd/content">chapter 9</a>)
+            </li>
+            <li>
+              <a href="https://www.engineersedge.com/mechanics_machines/geneva_mechanism_design_equations__14919.htm">Equations for Geneva Drive</a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   </body>
 </html>
-
-<!--
-Geneva wheel diameter = 2 × Drive wheel diameter / sin(360°/number of slots
-
--->
-<!-- 
-
-
-https://www.youtube.com/watch?v=dDNfsde5ynw
-https://www.youtube.com/shorts/uNzXZYjsFVw
-https://www.youtube.com/watch?v=Le-PVXUCl0M
-
-
-https://ecommons.cornell.edu/items/8ba94820-07e7-4c78-a38a-3ecd413d6f30  Mechanisms for Intermittent Motion
-https://ecommons.cornell.edu/server/api/core/bitstreams/4686812a-7d97-47e4-8f46-1fb663eb41fd/content geneva section
-
--->

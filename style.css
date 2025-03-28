@@ -229,16 +229,17 @@ dfn {
 
   .TitlePanel .caption {
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 36px;
     background-color: var(--main-text-color);
     color: var(--main-bg-color);
     padding: 10px;
   }
 
   .TitlePanel .caption b {
-    font-weight: 900;
+    /* font-weight: 900;
     font-size: 24px;
-    display: inline;
+    display: inline; */
+    display: none;
   }
 
   .TitlePanel-video {
