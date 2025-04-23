@@ -85,7 +85,7 @@ dfn {
   html,
   body {
     padding: 0;
-    /* margin: 0; */
+    margin: 0;
     background: var(--main-bg-color);
     width: 100%;
   }
@@ -118,6 +118,7 @@ dfn {
   height: 48px;
 
   padding-top: 4px;
+  padding-left: 10px;
   vertical-align: middle;
 }
 
@@ -228,7 +229,6 @@ dfn {
   }
 
   .TitlePanel .caption {
-    padding-left: 10px;
     font-size: 36px;
     background-color: var(--main-text-color);
     color: var(--main-bg-color);
